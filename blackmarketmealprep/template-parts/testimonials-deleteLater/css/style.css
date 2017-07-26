@@ -1,3 +1,7 @@
+/*--------------------------------------------------------------
+## Testimonials Styles
+--------------------------------------------------------------*/
+
 li,
 p {
   font-family: 'Arimo', sans-serif;
@@ -231,7 +235,7 @@ img {
   transform: translateY(-27px) rotate(45deg);
 }
 
-.see-all {
+/*.see-all {
   position: absolute;
   z-index: 1;
   left: 0;
@@ -249,13 +253,13 @@ img {
   -webkit-transition: color, 0.2s;
   -moz-transition: color, 0.2s;
   transition: color, 0.2s;
-}
+}*/
 
-.no-touch .see-all:hover {
+/*.no-touch .see-all:hover {
   color: #79b6e4;
-}
+}*/
 
-.testimonials-all {
+/*.testimonials-all {
   position: fixed;
   top: 0;
   left: 0;
@@ -268,9 +272,9 @@ img {
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
-}
+}*/
 
-.testimonials-all .testimonials-all-wrapper {
+/*.testimonials-all .testimonials-all-wrapper {
   position: absolute;
   left: 0;
   top: 0;
@@ -278,24 +282,23 @@ img {
   width: 100%;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
+}*/
 
-.testimonials-all .testimonials-all-wrapper > ul {
+/*.testimonials-all .testimonials-all-wrapper > ul {
   width: 90%;
   max-width: 1170px;
   margin: 4em auto;
-}
+}*/
 
-.testimonials-all .testimonials-all-wrapper > ul:after {
+/*.testimonials-all .testimonials-all-wrapper > ul:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
-.testimonials-all .testimonials-item {
+/*.testimonials-all .testimonials-item {
   margin-bottom: 2em;
   opacity: 0;
-  /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translate3d(0, 0, 0) scale(0.4);
   -moz-transform: translate3d(0, 0, 0) scale(0.4);
   -ms-transform: translate3d(0, 0, 0) scale(0.4);
@@ -306,9 +309,9 @@ img {
   -webkit-transition: -webkit-transform .3s, opacity .3s;
   -moz-transition: -moz-transform .3s, opacity .3s;
   transition: transform .3s, opacity .3s;
-}
+}*/
 
-.testimonials-all p {
+/*.testimonials-all p {
   position: relative;
   background: #79b6e4;
   color: white;
@@ -318,10 +321,9 @@ img {
   line-height: 1.4;
   border-radius: 0.25em;
   margin-bottom: 1em;
-}
+}*/
 
-.testimonials-all p::after {
-  /* creating the triangle in css */
+/*.testimonials-all p::after {
   content: '';
   position: absolute;
   top: 100%;
@@ -330,14 +332,14 @@ img {
   width: 0;
   border: 8px solid transparent;
   border-top-color: #79b6e4;
-}
+}*/
 
-.testimonials-all .author {
+/*.testimonials-all .author {
   text-align: left;
   margin-left: 1.5em;
 }
-
-.testimonials-all .author img {
+*/
+/*.testimonials-all .author img {
   box-shadow: 0 0 0 transparent;
 }
 
@@ -365,14 +367,12 @@ img {
   height: 40px;
   top: 10px;
   right: 5%;
-  /* image replacement */
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
 }
 
 .close-btn::before, .close-btn::after {
-  /* close icon in css */
   content: '';
   position: absolute;
   display: inline-block;
@@ -397,4 +397,4 @@ img {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
+}*/
