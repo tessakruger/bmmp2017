@@ -17,7 +17,7 @@
 
 	<div id="content">
 
-		<!-- testimonials: What People Are Saying page -->
+		<!-- testimonials: What People Are Saying -->
 		<section>
 			<div id="testimonials-container">
 				<div>
