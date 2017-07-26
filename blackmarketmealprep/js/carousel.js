@@ -15,21 +15,4 @@ $(document).ready(function($){
       });
     }
   });
-
-  // open the testimonials modal page
-  $('.c-see-all').on('click', function(){
-    $('.testimonials-all').addClass('is-visible');
-  });
-
-  // close the testimonials modal page
-  $('.testimonials-all .close-btn').on('click', function(){
-    $('.testimonials-all').removeClass('is-visible');
-  });
-
-  // check if user has pressed 'Esc'
-  $(document).keyup(function(event){
-    if(event.which=='27'){
-      $('.testimonials-all').removeClass('is-visible');	
-    }
-  });
 });
