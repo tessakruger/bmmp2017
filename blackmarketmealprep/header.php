@@ -16,10 +16,15 @@
 	<meta name="viewport" content="width=device-width" />
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<!--load fonts from google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arimo|Bitter:700" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/jquery.flexslider.js" type="text/javascript"></script>
+	<script src="js/carousel.js" type="text/javascript"></script>
 	<?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
+
