@@ -1,0 +1,105 @@
+/* home: Meet Our Team */
+
+body {
+	width: 100%;
+	height: 500px;
+	background-color: #f4f2ed;
+	margin: 0 auto;
+}
+
+.team-left-panel {
+	width: 60%;
+	margin: 0 auto;
+	float: left;
+}
+
+.team-right-panel {
+	width: 40%;
+	display: inline;
+	float: right;
+	margin-top: 160px;
+}
+
+ul.team {
+    display: inline;
+    float: left;
+}
+
+#team-margarita {
+	padding-left: 10px;
+}
+
+.team-title {
+	font-family: 'Arimo', sans-serif;
+	font-size: 30px;
+	color: #383848;
+	text-align: center;
+	margin-top: 110px;
+	margin-bottom: 30px;
+}
+
+.team-history {
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	color: #383848;
+	line-height: 1.4;
+	padding-bottom: 100px;
+	margin: 0 70px;
+}
+
+img {
+	width: 220px;
+	height: 220px;
+	background-color: #151521;
+}
+
+li {
+	list-style: none;
+}
+
+.team-author {
+	background-color: #151521;
+	width: 220px;
+	height: 220px;
+}
+
+.team-info {
+	background-color: #383848;
+	height: 80px;
+}
+
+.team-name {
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	color: #f0b56f;
+    padding-top: 10px;
+    margin-left: -30px;
+}
+
+.team-position {
+	font-family: 'Arimo', sans-serif;
+	font-size: 16px;
+	color: #f6f0f2;
+    padding-top: 10px;
+    margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
