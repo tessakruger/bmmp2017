@@ -84,6 +84,36 @@ li {
     margin-left: -30px;
 }
 
+/* HOVER STATES */
+
+.team-name-link:link {
+	text-decoration: none;
+	color: #f0b372;
+}
+
+.team-pos-link:link {
+	text-decoration: none;
+	color: #f6f0f2;
+}
+
+.team-name-link:hover {
+	color: #f6f0f2;
+}
+
+.team-pos-link:hover {
+	color: #171722;
+}
+
+img:hover {
+	opacity: 0.5;
+}
+
+
+ul.team-info:hover {
+    background-color: #229091;
+}
+
+
 
 
 
