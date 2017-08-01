@@ -6,7 +6,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 /*--------------------------------------------------------------
-## Testimonials Styles
+## Home: What People Are Saying
 --------------------------------------------------------------*/
 
 li,
@@ -15,8 +15,8 @@ p {
 }
 
 #testimonials-container {
-  height: 727px;
   width: 100%;
+  height: 727px;
   position: absolute;
   background-color: #1d1d2c;
   background: -webkit-linear-gradient(left, #1d1d2c , #383848); 
@@ -240,4 +240,121 @@ img {
   -ms-transform: translateY(-27px) rotate(45deg);
   -o-transform: translateY(-27px) rotate(45deg);
   transform: translateY(-27px) rotate(45deg);
+}
+
+/*--------------------------------------------------------------
+## Home: Meet Our Team 
+--------------------------------------------------------------*/
+
+.team-container {
+  width: 100%;
+  height: 500px;
+  background-color: #f4f2ed;
+  margin: 0 auto;
+}
+
+.team-left-panel {
+  width: 60%;
+  margin: 0 auto;
+  float: left;
+}
+
+.team-right-panel {
+  width: 40%;
+  display: inline;
+  float: right;
+  margin-top: 160px;
+}
+
+ul.team {
+    display: inline;
+    float: left;
+}
+
+#team-margarita {
+  padding-left: 10px;
+}
+
+.team-title {
+  font-family: 'Arimo', sans-serif;
+  font-size: 30px;
+  color: #383848;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.team-history {
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px;
+  color: #383848;
+  line-height: 1.4;
+  padding-bottom: 100px;
+  margin: 0 70px;
+}
+
+img {
+  width: 220px;
+  height: 220px;
+  background-color: #151521;
+}
+
+li {
+  list-style: none;
+}
+
+.team-author {
+  background-color: #151521;
+  width: 220px;
+  height: 220px;
+}
+
+.team-info {
+  background-color: #383848;
+  height: 80px;
+}
+
+.team-name {
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px;
+  color: #f0b56f;
+    padding-top: 10px;
+    margin-left: -30px;
+}
+
+.team-position {
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  color: #f6f0f2;
+    padding-top: 10px;
+    margin-left: -30px;
+}
+
+/* Home: Meet Our Team Hover */
+
+.team-name-link:link {
+  text-decoration: none;
+  color: #f0b372;
+}
+
+.team-pos-link:link {
+  text-decoration: none;
+  color: #f6f0f2;
+}
+
+.team-name-link:hover {
+  color: #f6f0f2;
+}
+
+.team-pos-link:hover {
+  color: #171722;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+
+ul.team-info:hover {
+    background-color: #229091;
 }
