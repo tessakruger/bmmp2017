@@ -1,22 +1,11 @@
+<?php get_header(); ?>
+
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * e.g., it puts together the home page when no home.php file exists.
- *
- * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
- *
- * @package WordPress
- */
-?> 
+while (have_posts()) : the_post(); ?>
 
-<?php get_header(); // Load the header.php template. ?>
+<h1><?php the_title();?></h1>
+<?php the_content(); ?>
 
-<div id="content">
+<?php endwhile; ?>
 
-</div><!-- load whatever content -->
-
-<?php get_footer(); // Load the footer.php template. ?>
+<?php get_footer(); ?>
