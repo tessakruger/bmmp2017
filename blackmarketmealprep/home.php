@@ -24,7 +24,7 @@
 						testimonial 1 ->
 						<li>
 							<div class="testimonial-author">
-								<a href="whatPeopleAreSaying.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/sandilee-review.jpg"></a>
+								<a href="whatPeopleAreSaying.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/whatPeopleAreSaying/sandilee-review.jpg"></a>
 								<ul class="testimonial-info">
 									<li>Sandilee M.</li>
 									<li>Costa Mestsa, CA</li>
@@ -35,7 +35,7 @@
 						testimonial 2 ->
 						<li>
 							<div class="testimonial-author">
-								<a href="whatPeopleAreSaying.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/hazele-review.jpg"></a>
+								<a href="whatPeopleAreSaying.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/whatPeopleAreSaying/hazele-review.jpg"></a>
 								<ul class="testimonial-info">
 									<li>Hazel E.</li>
 									<li>Costa Mestsa, CA</li>
@@ -46,7 +46,7 @@
 						testimonial 3 ->
 						<li>
 							<div class="testimonial-author">
-								<a href="whatPeopleAreSaying.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/tracyh-review.jpg"></a>
+								<a href="whatPeopleAreSaying.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/whatPeopleAreSaying/tracyh-review.jpg"></a>
 								<ul class="testimonial-info">
 									<li>Tracy H.</li>
 									<li>Irvine, CA/li>
@@ -72,7 +72,7 @@
 					<ul class="team" id="team-bryan"> 
 						<li>
 							<div class="team-author">
-								<a href="mission.php"><img class="team-img" src="<?php bloginfo('template_url'); ?>/assets/images/Bryan-Tapia.jpg"></a>
+								<a href="mission.php"><img class="team-img" src="<?php bloginfo('template_url'); ?>/assets/images/teamMission/Bryan-Tapia.jpg"></a>
 								<ul class="team-info">
 									<li class="team-name"><a class="team-name-link" href="mission.php">Chef Bryan Tapia</a></li>
 									<li class="team-position"><a class="team-pos-link" href="mission.php">Executive Chef &amp; Owner</a></li>
@@ -84,7 +84,7 @@
 					<ul class="team" id="team-margarita"> 
 						<li>
 							<div class="team-author">
-								<a href="mission.php"><img class="team-img" src="<?php bloginfo('template_url'); ?>/assets/images/Margarita-Tapia.jpg"></a>
+								<a href="mission.php"><img class="team-img" src="<?php bloginfo('template_url'); ?>/assets/images/teamMission/Margarita-Tapia.jpg"></a>
 								<ul class="team-info">
 									<li class="team-name"><a class="team-name-link" href="mission.php">Margarita Tapia</a></li>
 									<li class="team-position"><a class="team-pos-link" href="mission.php">Co Founder/Operations</a></li>
