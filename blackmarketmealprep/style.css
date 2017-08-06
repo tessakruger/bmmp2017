@@ -229,3 +229,357 @@ button {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
+
+/*--------------------------------------------------------------
+## Home: What People Are Saying
+--------------------------------------------------------------*/
+
+li,
+p {
+  font-family: 'Arimo', sans-serif;
+}
+
+#testimonials-container {
+  width: 100%;
+  height: 727px;
+  position: absolute;
+  background-color: #1d1d2c;
+  background: -webkit-linear-gradient(left, #1d1d2c , #383848); 
+  background: -o-linear-gradient(right, #1d1d2c , #383848); 
+  background: -moz-linear-gradient(right, #1d1d2c , #383848);
+  background: linear-gradient(to right, #1d1d2c , #383848); 
+  overflow: hidden;
+  z-index: 10;
+}
+
+#testimonials-container::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  opacity: 0.1;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url('../assets/images/bmmp-chicken-slices2.jpg');
+  z-index: 1;
+}
+
+#testimonials-title {
+  font-family: 'Arimo', sans-serif;
+  color: #f6f0f2;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+#testimonials-subtitle {
+  font-family: 'Arimo', sans-serif;
+  color: #b6b2b2;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 60px;
+  z-index: 2;
+}
+
+.testimonials-wrapper, .testimonials-wrapper * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.testimonials-wrapper ul {
+  list-style: none;
+}
+
+*, 
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.testimonials-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 768px;
+  background-color: #fff;
+  margin: 2em auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px 40px 70px;
+  z-index: 1;
+}
+
+.testimonials-wrapper::after {
+  display: none;
+}
+
+.testimonials {
+  color: #20202f;
+  text-align: center;
+}
+
+.testimonials::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.testimonials > li {
+  position: absolute;
+  opacity: 0;
+}
+
+.testimonials > li:first-child {
+  position: relative;
+  opacity: 1;
+}
+
+.testimonials p {
+  line-height: 1.4;
+  margin-bottom: 1em;
+  padding: 0 14px;
+  color: #20202f;
+  font-size: 18px; 
+}
+
+.testimonial-author img,
+.testimonial-author,
+.testimonial-info {
+  display: block;
+  vertical-align: middle;
+}
+
+.testimonial-author img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: auto;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  border: 10px solid #f4f2ed;
+}
+
+.testimonial-author, 
+.testimonial-info {
+  text-align: center;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.testimonial-author .testimonial-info li:first-child{
+  font-size: 20px;
+  color: #9a9a9a;
+}
+
+.testimonial-author .testimonial-info li:last-child{
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+/* FLEX DIRECTION */
+
+.flex-direction-nav li {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0; 
+}
+
+.flex-direction-nav li:first-child {
+  left: 0;
+}
+
+.flex-direction-nav li:last-child {
+  right: 0;
+}
+
+.flex-direction-nav li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.flex-direction-nav li:hover {
+  background-color: #F4F2ED;
+}
+
+.no-touch .flex-direction-nav li a:hover {
+  background-color: #F4F2ED;
+}
+
+.flex-direction-nav li a::before, .flex-direction-nav li a::after {
+  /* left and right arrows in css only */
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 13px;
+  background-color: #272735;
+}
+
+.flex-direction-nav li a::before {
+  -webkit-transform: translateY(-35px) rotate(45deg);
+  -moz-transform: translateY(-35px) rotate(45deg);
+  -ms-transform: translateY(-35px) rotate(45deg);
+  -o-transform: translateY(-35px) rotate(45deg);
+  transform: translateY(-35px) rotate(45deg);
+}
+
+.flex-direction-nav li a::after {
+  -webkit-transform: translateY(-27px) rotate(-45deg);
+  -moz-transform: translateY(-27px) rotate(-45deg);
+  -ms-transform: translateY(-27px) rotate(-45deg);
+  -o-transform: translateY(-27px) rotate(-45deg);
+  transform: translateY(-27px) rotate(-45deg);
+}
+
+.flex-direction-nav li:last-child a::before {
+  -webkit-transform: translateY(-35px) rotate(-45deg);
+  -moz-transform: translateY(-35px) rotate(-45deg);
+  -ms-transform: translateY(-35px) rotate(-45deg);
+  -o-transform: translateY(-35px) rotate(-45deg);
+  transform: translateY(-35px) rotate(-45deg);
+}
+
+.flex-direction-nav li:last-child a::after {
+  -webkit-transform: translateY(-27px) rotate(45deg);
+  -moz-transform: translateY(-27px) rotate(45deg);
+  -ms-transform: translateY(-27px) rotate(45deg);
+  -o-transform: translateY(-27px) rotate(45deg);
+  transform: translateY(-27px) rotate(45deg);
+}
+
+/*--------------------------------------------------------------
+## Home: Meet Our Team 
+--------------------------------------------------------------*/
+
+.team-container {
+  width: 100%;
+  height: 500px;
+  background-color: #f4f2ed;
+  margin: 0 auto;
+}
+
+.team-left-panel {
+  width: 60%;
+  margin: 0 auto;
+  float: left;
+}
+
+.team-right-panel {
+  width: 40%;
+  display: inline;
+  float: right;
+  margin-top: 160px;
+}
+
+ul.team {
+    display: inline;
+    float: left;
+}
+
+#team-margarita {
+  padding-left: 10px;
+}
+
+.team-title {
+  font-family: 'Arimo', sans-serif;
+  font-size: 30px;
+  color: #383848;
+  text-align: center;
+  margin-top: 110px;
+  margin-bottom: 30px;
+}
+
+.team-history {
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px;
+  color: #383848;
+  line-height: 1.4;
+  padding-bottom: 100px;
+  margin: 0 70px;
+}
+
+.team-img {
+  width: 220px;
+  height: 220px;
+  background-color: #151521;
+}*/
+
+li {
+  list-style: none;
+}
+
+.team-author {
+  background-color: #151521;
+  width: 220px;
+  height: 220px;
+}
+
+.team-info {
+  background-color: #383848;
+  height: 80px;
+}
+
+.team-name {
+  font-family: 'Arimo', sans-serif;
+  font-size: 20px;
+  color: #f0b56f;
+    padding-top: 10px;
+    margin-left: -30px;
+}
+
+.team-position {
+  font-family: 'Arimo', sans-serif;
+  font-size: 16px;
+  color: #f6f0f2;
+    padding-top: 10px;
+    margin-left: -30px;
+}
+
+/* Home: Meet Our Team Hover */
+
+.team-name-link:link {
+  text-decoration: none;
+  color: #f0b372;
+}
+
+.team-pos-link:link {
+  text-decoration: none;
+  color: #f6f0f2;
+}
+
+.team-name-link:hover {
+  color: #f6f0f2;
+}
+
+.team-pos-link:hover {
+  color: #171722;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+
+ul.team-info:hover {
+    background-color: #229091;
+}
