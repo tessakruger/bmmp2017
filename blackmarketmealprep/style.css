@@ -136,7 +136,7 @@ body {
     height: auto;
     margin: 0px;
     padding-left: 14vw;
-    font-family: Arimo;
+    font-family: 'Arimo', sans-serif;
 }
 
 .promo {
@@ -195,7 +195,12 @@ body {
 .orders img {
     vertical-align: super;
 }
-
+.mobile-orders {
+    display: none;
+}
+.mobile-nav {
+    display: none;
+}
 .nav {
     background-color: #171722;
     color: #FFFFFF;
@@ -574,7 +579,7 @@ button {
     width: 100%;
     height: 500px;
     background-color: #f4f2ed;
-    margin-top: 727px;
+    margin-top: 160px;
 }
 
 .team-left-panel {
@@ -728,7 +733,6 @@ ul.team-info:hover {
     }
 
     .tablet-orders {
-        display: inline-block;
         list-style: none !important;
         padding: 0px;
         display: inline-block !important;
@@ -736,6 +740,7 @@ ul.team-info:hover {
         display: inline-block;
         font-size: small;
         height: 80px;
+        font-family: 'Arimo', sans-serif;
     }
 
     .tablet-orders li {
@@ -785,6 +790,12 @@ ul.team-info:hover {
         padding-right: 15px;
         padding-top: 20px;
     }
+    .mobile-orders {
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
 }
 
 
@@ -795,6 +806,26 @@ ul.team-info:hover {
         display: none !important;
     }
 
+    .mobile-orders{
+        display: inline-block;
+        list-style: none !important;
+        padding: 0px;
+        color: #eeeeee;
+        text-transform: uppercase;
+        font-family: 'Arimo', sans-serif;
+        font-size: small;
+        padding: 10px 0 10px 0;
+    }
+
+    .mobile-orders li {
+        list-style: none !important;
+        padding: 0px;
+        display: inline-block !important;
+    }
+
+    .mobile-promo li{
+        font-size: medium;
+    }
     .header {
         text-align: center;
         padding-left: 0px;
@@ -804,17 +835,40 @@ ul.team-info:hover {
     }
     .orders {
         margin-top: 0px;
-    }
-    .orders li:not(:first-child) {
         display: none !important;
     }
     .nav {
-        padding: ;
-    }
-    .nav li:not(:first-child) {
         display: none !important;
     }
     .social {
         display: none !important;
+    }
+    .mobile-nav {
+        background-color: #171722;
+        color: #FFFFFF; 
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: inline-block;
+        font-size: medium;
+        padding: 10px 2px 5px 35px;
+        font-family: Arimo;
+    }
+    .mobile-nav li {
+        list-style: none;
+        display: inline-block;
+    }
+    .mobile-nav button {
+        border-radius: 0px;
+        background-color: #f0b46e; 
+    }
+    .mobile-social li:first-child{
+        padding-right: 150px;
+    }
+    .mobile-info {
+        padding-top: 10px;
+    }
+    .mobile-info li{
+        padding-right: 33px;
     }
 }
