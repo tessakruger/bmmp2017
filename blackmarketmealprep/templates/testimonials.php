@@ -1,4 +1,3 @@
-
 <?php get_header(); // Load the header.php template. ?>
 
 	<div id="content">
