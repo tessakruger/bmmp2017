@@ -335,8 +335,8 @@ button {
 ## Home: What People Are Saying
 --------------------------------------------------------------*/
 
-.team-container li,
-.team-container p {
+.testimonials-container li,
+.testimonials-container p {
     font-family: 'Arimo', sans-serif;
 }
 
@@ -649,7 +649,7 @@ ul.team {
     font-size: 20px;
     color: #f0b56f;
     padding-top: 10px;
-    margin-left: -30px;
+    margin: 0 10px;
 }
 
 .team-position {
@@ -657,7 +657,7 @@ ul.team {
     font-size: 16px;
     color: #f6f0f2;
     padding-top: 10px;
-    margin-left: -30px;
+    margin: 0 10px;
 }
 
 
