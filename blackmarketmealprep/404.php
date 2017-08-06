@@ -11,7 +11,7 @@ get_header(); ?>
 
   <div class="inner-content">
 <br><br>
-  	<center><img src="<?php echo get_template_directory_uri(); ?>/img/Duke_404_sm.png" class="beer-not-found"/></center>
+  	<center><img src="<?php echo get_template_directory_uri(); ?>/images/404.png" class="page-not-found"/></center>
       
   </div>
 
