@@ -136,7 +136,7 @@ body {
     height: auto;
     margin: 0px;
     padding-left: 14vw;
-    font-family: Arimo;
+    font-family: 'Arimo', sans-serif;
 }
 
 .promo {
@@ -194,6 +194,15 @@ body {
 
 .orders img {
     vertical-align: super;
+<<<<<<< HEAD
+=======
+}
+.mobile-orders {
+    display: none;
+}
+.mobile-nav {
+    display: none;
+>>>>>>> c099f5886774fbf0c5c78b1abcbb3c31bfaebfd0
 }
 
 .nav {
@@ -728,7 +737,10 @@ ul.team-info:hover {
     }
 
     .tablet-orders {
+<<<<<<< HEAD
         display: inline-block;
+=======
+>>>>>>> c099f5886774fbf0c5c78b1abcbb3c31bfaebfd0
         list-style: none !important;
         padding: 0px;
         display: inline-block !important;
@@ -736,6 +748,10 @@ ul.team-info:hover {
         display: inline-block;
         font-size: small;
         height: 80px;
+<<<<<<< HEAD
+=======
+        font-family: 'Arimo', sans-serif;
+>>>>>>> c099f5886774fbf0c5c78b1abcbb3c31bfaebfd0
     }
 
     .tablet-orders li {
@@ -785,6 +801,15 @@ ul.team-info:hover {
         padding-right: 15px;
         padding-top: 20px;
     }
+<<<<<<< HEAD
+=======
+    .mobile-orders {
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+>>>>>>> c099f5886774fbf0c5c78b1abcbb3c31bfaebfd0
 }
 
 
@@ -795,6 +820,29 @@ ul.team-info:hover {
         display: none !important;
     }
 
+<<<<<<< HEAD
+=======
+    .mobile-orders{
+        display: inline-block;
+        list-style: none !important;
+        padding: 0px;
+        color: #eeeeee;
+        text-transform: uppercase;
+        font-family: 'Arimo', sans-serif;
+        font-size: small;
+        padding: 10px 0 10px 0;
+    }
+
+    .mobile-orders li {
+        list-style: none !important;
+        padding: 0px;
+        display: inline-block !important;
+    }
+
+    .mobile-promo li{
+        font-size: medium;
+    }
+>>>>>>> c099f5886774fbf0c5c78b1abcbb3c31bfaebfd0
     .header {
         text-align: center;
         padding-left: 0px;
@@ -804,6 +852,7 @@ ul.team-info:hover {
     }
     .orders {
         margin-top: 0px;
+<<<<<<< HEAD
     }
     .orders li:not(:first-child) {
         display: none !important;
@@ -812,9 +861,46 @@ ul.team-info:hover {
         padding: ;
     }
     .nav li:not(:first-child) {
+=======
+        display: none !important;
+    }
+    .nav {
+>>>>>>> c099f5886774fbf0c5c78b1abcbb3c31bfaebfd0
         display: none !important;
     }
     .social {
         display: none !important;
     }
+<<<<<<< HEAD
 }
+=======
+    .mobile-nav {
+        background-color: #171722;
+        color: #FFFFFF; 
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: inline-block;
+        font-size: medium;
+        padding: 10px 2px 5px 35px;
+        font-family: Arimo;
+    }
+    .mobile-nav li {
+        list-style: none;
+        display: inline-block;
+    }
+    .mobile-nav button {
+        border-radius: 0px;
+        background-color: #f0b46e; 
+    }
+    .mobile-social li:first-child{
+        padding-right: 150px;
+    }
+    .mobile-info {
+        padding-top: 10px;
+    }
+    .mobile-info li{
+        padding-right: 33px;
+    }
+}
+>>>>>>> c099f5886774fbf0c5c78b1abcbb3c31bfaebfd0

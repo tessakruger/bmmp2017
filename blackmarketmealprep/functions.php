@@ -49,10 +49,8 @@ function disable_emojicons_tinymce($plugins)
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
-
 /** FOR FUTURE USE
 * Use Post Category to load template
-
 add_filter('single_template', create_function(
 '$the_template',
 'foreach( (array) get_the_category() as $cat ) {
@@ -61,10 +59,8 @@ add_filter('single_template', create_function(
   return $the_template;')
 ); 
 */
-
 /** For future: 
 * Customize login logo
-
 function my_login_logo() { ?>
   <style type="text/css">
   .login h1 a {
