@@ -361,7 +361,7 @@ button {
     opacity: 0.1;
     background-position: 50% 50%;
     background-size: cover;
-    background-image: url('../assets/images/whatPeopleAreSaying/bmmp-chicken-slices2.jpg');
+    background-image: url('assets/images/whatPeopleAreSaying/bmmp-chicken-slices2.jpg');
     z-index: 1;
 }
 
