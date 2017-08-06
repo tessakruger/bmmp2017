@@ -21,6 +21,9 @@
 	<!--[if lt IE 9]>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/jquery.flexslider.js" type="text/javascript"></script>
+	<script src="js/carousel.js" type="text/javascript"></script>
 	<![endif]-->
 	<title><?php echo get_the_title(); ?> | Black Market Meal Prep</title>
 	<?php wp_head(); ?>
