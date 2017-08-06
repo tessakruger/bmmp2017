@@ -525,11 +525,12 @@ ul.team {
   margin: 0 70px;
 }
 
-img {
+/*this is causing issues with header image, please create a class for  these images*/
+/*img {
   width: 220px;
   height: 220px;
   background-color: #151521;
-}
+}*/
 
 li {
   list-style: none;
