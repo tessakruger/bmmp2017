@@ -21,6 +21,9 @@
 	<!--[if lt IE 9]>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85807/jquery.flexslider.js" type="text/javascript"></script>
+	<script src="js/carousel.js" type="text/javascript"></script>
 	<![endif]-->
 	<title><?php echo get_the_title(); ?> | Black Market Meal Prep</title>
 	<?php wp_head(); ?>
@@ -28,18 +31,53 @@
 <body>
   <div class="header">
     <ul class="promo">
-	    <li>You are now ordering for Sunday July 02, 2017.  Pick-Up (6pm-9pm)/Delivery(4pm-9pm)</li>
+	    <li>You are now ordering for Sunday July 02, 2017.  Pick-Up (6pm-9pm)/Delivery(4pm-9pm)</li><!-- this needs to be the actual date? -->
 	  </ul>
 	  <ul class="orders">
-	  	<li>Place your order before Thursday 11:59PM. Questions? Call/Text (714)767-4145</li>
-	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/order_icon.png" alt="order"/></li>
+	  	<li>Place your order before Thursday 11:59PM. Questions? Call/Text (714)767-4145</li><!-- this needs to be the actual date? -->
+	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/order_nav_icon.png" alt="order"/></li>
 	  	<li>&nbsp;Order Now&nbsp;</li>
-	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/checkout_icon.png" alt="checkout"/></li>
+	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/checkout_nav_icon.png" alt="checkout"/></li>
 	  	<li>&nbsp;Checkout&nbsp;</li>
-	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/cart_icon.png" alt="cart" /></li>
+	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/cart_nav_icon.png" alt="cart" /></li>
 	  	<li>&nbsp;5 items - $20.85&nbsp;</li>
 	  	<li><button>login</button></li>
 	  </ul>
+	   <div class="tablet-orders">
+	   	<ul class="order-text">
+	   		<li>Place your order before Thursday 11:59PM. Questions? Call/Text (714)767-4145</li>
+	   	</ul>
+	  	<hr>
+	  	  <ul class="order-nav">
+	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/order_nav_icon.png" alt="order"/></li>
+	  		<li>&nbsp;Order Now&nbsp;&nbsp;</li>
+	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/checkout_nav_icon.png" alt="checkout"/></li>
+	  		<li>&nbsp;Checkout&nbsp;&nbsp;</li>
+	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/cart_nav_icon.png" alt="cart" /></li>
+	  		<li>&nbsp;5 items - $20.85&nbsp;&nbsp;</li>
+	  	  </ul>
+	  	  <ul class="tablet-buttons">
+	  	  	<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" href="https://www.facebook.com/blackmarketmealprep/" alt="facebook"/> </li>
+	    	<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" href="https://www.instagram.com/blackmarketmealprep/" alt="instagram"/> </li>
+	  		<li><button>login</button></li>
+	  	  </ul>	
+	  </div>
+	  <div class="mobile-orders">
+	    <ul class="mobile-promo">
+	    	<li>You are now ordering for </li>  <!-- this needs to be the actual date? -->
+	  		</br>
+	  		<li>Sunday July 02, 2017</li>
+	  	</ul>
+	  	<br/>
+	  	<ul>
+	    	<li>Pick-Up (6pm-9pm) / Delivery(4pm-9pm).</li>
+	    	<li>Place your order before Thursday</li>
+	    	<br />
+	    	<li>11:59PM</li> 
+	    	<br />
+	    	<li>Questions? Call/Text (714)767-4145</li>
+	    </ul>
+	  </div>
 	</div>
 	<div class="nav">
 	  <ul>
@@ -54,5 +92,18 @@
 	    <li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" href="https://www.facebook.com/blackmarketmealprep/" alt="facebook"/> </li>
 	    <li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" href="https://www.instagram.com/blackmarketmealprep/" alt="instagram"/> </li>
 	  </ul>
+	</div>
+	<div class="mobile-nav">
+	  	<ul class="mobile-social">
+	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/logo.png" height="45px" alt="logo"/>&nbsp;&nbsp;</li>
+	  		<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" href="https://www.facebook.com/blackmarketmealprep/" alt="facebook"/> </li>
+	    	<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" href="https://www.instagram.com/blackmarketmealprep/" alt="instagram"/> </li>
+	  	</ul>
+	  	<ul class="mobile-info">
+	  		<li>Order Now</li>
+	  		<li>Checkout</li>
+	  		<li>Cart</li>
+	  		<li><button>login</button></li>
+	  	</ul>
 	</div>
 </body>
