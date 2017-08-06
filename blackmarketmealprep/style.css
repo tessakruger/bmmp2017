@@ -141,7 +141,7 @@ body {
 
 .promo {
     list-style: none !important;
-    width: 100vw;
+    width: 100%;
     display: inline-block;
     font-size: 10px;
     padding-left: 3px;
@@ -168,7 +168,7 @@ body {
 
 .orders {
     list-style: none !important;
-    width: 100vw;
+    width: 100%;
     display: inline-block;
     font-size: 10px;
     padding-left: 3px;
@@ -264,7 +264,7 @@ button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 100px 50px;
+  padding: 80px 50px;
   max-width: 860px;
   font-family: Arimo, sans-serif;
 }
@@ -281,12 +281,12 @@ button {
   color: #f0b46e;
   text-align: center;
   font-size: 40px;
-  margin-top: 80px;
   margin-bottom: 10px;
 }
 
 .order-subtext {
   color: #ffffff;
+  font-size: 15px;
 }
 
 .order-steps-wrapper {
@@ -294,6 +294,7 @@ button {
   justify-content: space-between;
   text-align: center;
   margin: 50px 0;
+  color: #ffffff;
 }
 
 .order-step-1,
@@ -311,14 +312,17 @@ button {
 
 .order-step-4 {order: 4}
 
-.order-icon {width: 100px}
+.order-icon {
+    height: 100px;
+    margin-bottom: 25px;
+}
 
 .order-step-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.order-step-description {font-size: 17px}
+.order-step-description {font-size: 12px}
 
 
 /*--------------------------------------------------------------
@@ -352,7 +356,7 @@ button {
     opacity: 0.1;
     background-position: 50% 50%;
     background-size: cover;
-    background-image: url('../assets/images/whatPeopleAreSaying/bmmp-chicken-slices2.jpg');
+    background-image: url('../assets/images/bmmp-chicken-slices2.jpg');
     z-index: 1;
 }
 
