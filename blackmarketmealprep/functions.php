@@ -1,58 +1,72 @@
 <?php
 /**
- * blackmarketmealprep's functions and definitions
- *
- * @package blackmarketmealprep
- * @since blackmarketmealprep 1.0
- */
- 
+* Short Codes
+*/
 /**
- * First, let's set the maximum content width based on the theme's design and stylesheet.
- * This will limit the width of all uploaded images and embeds.
- */
-if ( ! isset( $content_width ) )
-    $content_width = 800; /* pixels */
- 
-if ( ! function_exists( 'blackmarketmealprep_setup' ) ) :
+* Remove WordPress Admin bar.
+*/
+add_filter('show_admin_bar', '__return_false');
 /**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which runs
- * before the init hook. The init hook is too late for some features, such as indicating
- * support post thumbnails.
- */
-function blackmarketmealprep_setup() {
- 
-    /**
-     * Make theme available for translation... if ever needed it's here already.
-     * Translations can be placed in the /languages/ directory.
-     */
-    load_theme_textdomain( 'blackmarketmealprep', get_template_directory() . '/languages' );
- 
-    /**
-     * Add default posts and comments RSS feed links to <head>.
-     */
-    add_theme_support( 'automatic-feed-links' );
- 
-    /**
-     * Enable support for post thumbnails and featured images.
-     */
-    add_theme_support( 'post-thumbnails' );
- 
-    /**
-     * Add support for two custom navigation menus.
-     */
-    register_nav_menus( array(
-        'primary'   => __( 'Primary Menu', 'blackmarketmealprep' ),
-        'secondary' => __('Secondary Menu', 'blackmarketmealprep' )
-    ) );
- 
-    /**
-     * Enable support for the following post formats:
-     * aside, gallery, quote, image, and video
-     */
-    add_theme_support( 'post-formats', array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
+*Add Styling
+*/
+wp_enqueue_style( 'style', get_stylesheet_uri() );
+/**
+**Add Menu management
+*/
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+  register_nav_menu('footer-menu',__( 'Footer Menu' ));
 }
-endif; // blackmarketmealprep_setup
-add_action( 'after_setup_theme', 'blackmarketmealprep_setup' );
-?>
+add_action( 'init', 'register_my_menu' );
+/**
+* Remove WP Emoji... Not sure why it comes by default.
+*/
+function disable_wp_emojicons()
+{
+  // all actions related to emojis
+  remove_action('admin_print_styles', 'print_emoji_styles');
+  remove_action('wp_head', 'print_emoji_detection_script', 7);
+  remove_action('admin_print_scripts', 'print_emoji_detection_script');
+  remove_action('wp_print_styles', 'print_emoji_styles');
+  remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+  remove_filter('the_content_feed', 'wp_staticize_emoji');
+  remove_filter('comment_text_rss', 'wp_staticize_emoji');
+  // filter to remove TinyMCE emojis
+  add_filter('tiny_mce_plugins', 'disable_emojicons_tinymce');
+}
+add_action('init', 'disable_wp_emojicons');
+function disable_emojicons_tinymce($plugins)
+{
+  if (is_array($plugins)) {
+    return array_diff($plugins, array('wpemoji'));
+  } else {
+    return array();
+  }
+}
+/**
+* More head cleanup.
+*/
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wp_generator');
+/** FOR FUTURE USE
+* Use Post Category to load template
+add_filter('single_template', create_function(
+'$the_template',
+'foreach( (array) get_the_category() as $cat ) {
+  if ( file_exists(TEMPLATEPATH . "/templates/single-{$cat->slug}.php") )
+  return TEMPLATEPATH . "/templates/single-{$cat->slug}.php"; }
+  return $the_template;')
+); 
+*/
+/** For future: 
+* Customize login logo
+function my_login_logo() { ?>
+  <style type="text/css">
+  .login h1 a {
+    background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/img/admin.png);
+    padding-bottom: 30px;
+  }
+  </style>
+  <?php }
+  add_action( 'login_enqueue_scripts', 'my_login_logo' ); */
