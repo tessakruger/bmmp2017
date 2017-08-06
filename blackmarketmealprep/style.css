@@ -5,6 +5,238 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+/*
+Theme Name: blackmarketmealprep
+Theme URI: blackmarketmealprep.store
+Description: Custom theme created for BMMP.
+*/
+
+
+/*  RESET STYLE  */
+
+*:focus {
+    outline: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+
+/*  CUSTOM FONTS  */
+
+@font-face {
+    font-family: Arimo;
+    src: url(assets/fonts/Arimo-Regular.ttf);
+    font-weight: normal;
+}
+
+
+/*  HEADER STYLES */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-color: #229091;
+    color: #8cc0c2;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding-left: 14vw;
+    font-family: Arimo;
+}
+
+.promo {
+    list-style: none !important;
+    width: 100vw;
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 3px;
+}
+
+.promo ul {
+    list-style: none !important;
+    padding: 0px;
+    display: inline-block !important;
+}
+
+.promo li {
+    list-style: none !important;
+    padding: 0px;
+    display: inline-block !important;
+    padding-right: 10vw;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+.orders {
+    list-style: none !important;
+    width: 100vw;
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 3px;
+    margin-top: -10px;
+}
+
+.orders ul {
+    list-style: none !important;
+    padding: 0px;
+    display: inline-block !important;
+}
+
+.orders li {
+    list-style: none !important;
+    padding: 0px;
+    display: inline-block !important;
+}
+
+.orders li:first-child {
+    padding-right: 10vw;
+    text-transform: uppercase;
+}
+
+.orders img {
+  vertical-align: super;
+}
+.nav {
+    background-color: #171722;
+    color: #FFFFFF;
+    list-style: none;
+    height: 75px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: inline-block;
+    font-size: 13px;
+    padding: 10px 2px 5px 15vw;
+    font-family: Arimo;
+}
+
+.nav ul {
+    list-style: none !important;
+    display: inline-block;
+}
+
+.nav li {
+    list-style: none !important;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.social {
+    list-style: none !important;
+    display: inline-block;
+    padding-left: 19.5vw;
+}
+
+.social li {
+    padding-right: 0 !important;
+}
+
+.dot {
+    color: #e4b95b;
+    display: inline-block;
+}
+
+button {
+    background-color: #e4b95b;
+    border-radius: 15px;
+    border: none;
+    color: #EEEEEE;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
 /*--------------------------------------------------------------
 ## Home: What People Are Saying
 --------------------------------------------------------------*/

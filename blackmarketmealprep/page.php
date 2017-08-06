@@ -1,9 +1,22 @@
-<?php
-/**
- * The template for displaying the most basic structure of a page*/
-/** can also make templates for specific pages*/
+<?php get_header(); ?>
 
-get_header(); ?>
-	
-<?php
-get_footer(); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+<div class="page-content">
+
+  <div class="inner-title">
+    <h1><?php the_title(); ?></h1>
+  </div>
+
+  <div class="inner-content">
+
+      <?php the_content(); ?>
+      
+  </div>
+
+</div>
+
+<?php endwhile; ?>
+<?php endif; ?>
+
+<?php get_footer();
