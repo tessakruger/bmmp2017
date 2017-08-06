@@ -201,6 +201,7 @@ body {
 .mobile-nav {
     display: none;
 }
+
 .nav {
     background-color: #171722;
     color: #FFFFFF;
@@ -334,8 +335,8 @@ button {
 ## Home: What People Are Saying
 --------------------------------------------------------------*/
 
-.team-container li,
-.team-container p {
+.testimonials-container li,
+.testimonials-container p {
     font-family: 'Arimo', sans-serif;
 }
 
@@ -648,7 +649,7 @@ ul.team {
     font-size: 20px;
     color: #f0b56f;
     padding-top: 10px;
-    margin-left: -30px;
+    margin: 0 10px;
 }
 
 .team-position {
@@ -656,7 +657,7 @@ ul.team {
     font-size: 16px;
     color: #f6f0f2;
     padding-top: 10px;
-    margin-left: -30px;
+    margin: 0 10px;
 }
 
 
@@ -733,6 +734,7 @@ ul.team-info:hover {
     }
 
     .tablet-orders {
+        display: inline-block;
         list-style: none !important;
         padding: 0px;
         display: inline-block !important;
@@ -805,7 +807,6 @@ ul.team-info:hover {
     .tablet-orders {
         display: none !important;
     }
-
     .mobile-orders{
         display: inline-block;
         list-style: none !important;
@@ -835,6 +836,8 @@ ul.team-info:hover {
     }
     .orders {
         margin-top: 0px;
+    }
+    .orders li:not(:first-child) {
         display: none !important;
     }
     .nav {
@@ -859,11 +862,13 @@ ul.team-info:hover {
         display: inline-block;
     }
     .mobile-nav button {
-        border-radius: 0px;
-        background-color: #f0b46e; 
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #f0b46e;
+        font-size: medium; 
     }
     .mobile-social li:first-child{
-        padding-right: 150px;
+        padding-right: 125px;
     }
     .mobile-info {
         padding-top: 10px;
