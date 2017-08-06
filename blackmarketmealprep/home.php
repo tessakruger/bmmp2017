@@ -59,7 +59,7 @@
 
 	<!-- Home: What People Are Saying -->
 	<section>
-		<div id="testimonials-container">
+		<div id="testimonials-container" class="testimonials-img">
 			<div>
 				<h4 id="testimonials-title">What People Are Saying</h4>
 				<p id="testimonials-subtitle">review us on yelp or send us an email</p>
