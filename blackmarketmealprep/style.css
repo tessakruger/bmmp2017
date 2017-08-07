@@ -305,21 +305,18 @@ button {
   position: relative;
 }
 
-.order-step-1,
-.order-step-2,
-.order-step-3,
-.order-step-4 {width: 22%}
-
-.order-step-1 {order: 1}
-
-.order-step-2 {order: 2}
-
-.order-step-3 {
-    order: 3;
+.order-step {
+    width: 22%;
     position: relative;
 }
 
-.order-step-4 {order: 4}
+.order-step.one {order: 1}
+
+.order-step.two {order: 2}
+
+.order-step.three {order: 3}
+
+.order-step.four {order: 4}
 
 .order-icon {
     height: 100px;
@@ -327,12 +324,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 #order-step-icon {height: 75px}
 
-#order-step-delivery {height: 130px}
+#order-step-delivery {height: 120px}
 
 .order-step-title {
   font-size: 24px;
@@ -341,30 +337,22 @@ button {
 
 .order-step-description {font-size: 12px}
 
-.order-lines {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-    padding-top: 5%;
-}
-
 .order-line {
-    width: 100%;
+    position: absolute;
     border-top: 1.25px dotted #f0b46e;
+    top: 50px;
 }
 
-.order-line.spacer {
-    width: 125%;
-    border: none;
+.order-line.one {left: 80%;}
+
+.order-line.two {left: 75%;}
+
+.order-line.three {left: 95%;}
+
+#order-delivery-schedule {
+    background: none;
+    position: absolute;
 }
-
-.order-line.spacer.first {width: 130%}
-
-.order-line.spacer.second {width: 95%;}
 
 #order-delivery-schedule {
     background: none;

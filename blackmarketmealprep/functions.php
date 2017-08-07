@@ -58,6 +58,13 @@ function add_my_script() {
         get_template_directory_uri() . '/js/hamburger-menu.js', // location of js file
         array('jquery') // this array lists the scripts upon which your script depends
     );
+
+// add jquery for lines between how to order steps
+    wp_enqueue_script(
+        'order-step-lines', // name your script 
+        get_template_directory_uri() . '/js/order-step-lines.js', // location of js file
+        array('jquery') // this array lists the scripts upon which your script depends
+    );
 }
 
 //woocommerce
