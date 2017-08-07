@@ -17,7 +17,8 @@
         </div>
         <div class="order-steps-wrapper">
           <div class="order-step-1">
-            <img class="order-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png">
+            <div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png">
+            </div>
             <div class="order-step-title">
               Order Now
             </div>
@@ -26,7 +27,8 @@
             </div>
           </div>
           <div class="order-step-2">
-            <img class="order-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png">
+            <div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png">
+            </div>
             <div class="order-step-title">
               Customize Meal
             </div>
@@ -35,7 +37,8 @@
             </div>
           </div>
           <div class="order-step-3">
-            <img class="order-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/delivery-icon.png">
+            <div class="order-icon"><img id="order-step-delivery" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/delivery-icon.png">
+            </div>
             <div class="order-step-title">
               Pickup or Delivery?
             </div>
@@ -44,7 +47,7 @@
             </div>
           </div>
           <div class="order-step-4">
-            <img class="order-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/checkout-enjoy-icon.png">
+            <div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/checkout-enjoy-icon.png"></div>
             <div class="order-step-title">
               Checkout & Enjoy
             </div>
@@ -52,8 +55,17 @@
               Submit your order, and let us take care of the rest.
             </div>
           </div>
-        </div>
-      </div>
+          <div class="order-lines">
+          	<div class="order-line spacer first"></div>
+          	<div class="order-line"></div>
+          	<div class="order-line spacer second"></div>
+          	<div class="order-line"></div>
+          	<div class="order-line spacer"></div>
+          	<div class="order-line"></div>
+          	<div class="order-line spacer"></div>
+          </div>
+        </div><!--order-steps-wrapper END -->
+      </div><!--order-container END -->
     </section>
     <!-- end of Home: How to Order -->
 
@@ -94,7 +106,7 @@
 							<a href="whatPeopleAreSaying.php"><img src="<?php bloginfo('template_url'); ?>/assets/images/whatPeopleAreSaying/tracyh-review.jpg"></a>
 							<ul class="testimonial-info">
 								<li>Tracy H.</li>
-								<li>Irvine, CA/li>
+								<li>Irvine, CA</li>
 							</ul>
 						</div>
 						<p>They had a wide selection of options that revolved around several different types of proteins. I liked that they usually had at 2 different preparation of each protein to choose from...</p>
