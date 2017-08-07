@@ -652,6 +652,10 @@ ul.team {
     margin: 0 70px;
 }
 
+.team li {
+    list-style: none;
+}
+
 .team-img {
     width: 220px;
     height: 220px;
