@@ -354,6 +354,11 @@ button {
     position: absolute;
 }
 
+#order-delivery-schedule {
+    background: none;
+    position: absolute;
+}
+
 #order-delivery-text {
     opacity: 0;
     font-size: 12px;
