@@ -49,8 +49,32 @@ function disable_emojicons_tinymce($plugins)
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
+
+// add jquery for mobile nav menu
+add_action( 'wp_enqueue_scripts', 'add_my_script' );
+function add_my_script() {
+    wp_enqueue_script(
+        'hamburger-menu', // name your script 
+        get_template_directory_uri() . '/js/hamburger-menu.js', // location of js file
+        array('jquery') // this array lists the scripts upon which your script depends
+    );
+
+// add jquery for lines between how to order steps
+    wp_enqueue_script(
+        'order-step-lines', // name your script 
+        get_template_directory_uri() . '/js/order-step-lines.js', // location of js file
+        array('jquery') // this array lists the scripts upon which your script depends
+    );
+}
+
+//woocommerce
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+add_theme_support( 'woocommerce' ); }
+
 /** FOR FUTURE USE
 * Use Post Category to load template
+
 add_filter('single_template', create_function(
 '$the_template',
 'foreach( (array) get_the_category() as $cat ) {
@@ -59,8 +83,10 @@ add_filter('single_template', create_function(
   return $the_template;')
 ); 
 */
+
 /** For future: 
 * Customize login logo
+
 function my_login_logo() { ?>
   <style type="text/css">
   .login h1 a {
