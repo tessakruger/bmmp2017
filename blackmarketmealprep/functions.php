@@ -60,6 +60,16 @@ function add_my_script() {
     );
 }
 
+// Carousel Home: What People Are Saying
+add_action( 'wp_enqueue_scripts', 'add_my_script' );
+function add_my_script() {
+    wp_enqueue_script(
+      'carousel', 
+      get_template_directory_uri() . '/js/carousel.js',
+      array('jquery')
+    );
+}
+
 //woocommerce
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
