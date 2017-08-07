@@ -607,7 +607,7 @@ button {
 
 .team-container {
     width: 100%;
-    height: 500px;
+    height: 582px;
     background-color: #f4f2ed;
     margin-top: 727px;
 }
@@ -719,6 +719,241 @@ ul.team-info:hover {
     background-color: #229091;
 }
 
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+/* MAP IMAGE */
+
+.footer-map-image {
+    width: 100%;
+    height: 100%;
+}
+
+#footer-container {
+    width: 100%;
+    height: 100%;
+    background-color: #20202f;
+    margin-top: -5px;
+}
+
+.footer-div {
+    width: 15%;
+    display: inline;
+    margin-right: 45px;
+}
+
+/* FOOTER LOGO */
+.footer-bmmp-logo {
+    width: 25%;
+    height: 25%;
+    margin-left: 35px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 35px;
+}
+
+/* FOOTER CONTACT FORM */
+#footer-contact {
+    width: 31%;
+    height: 500px;
+    background-color: #fff;
+    float: left;
+    margin-top: -164px;
+    position: relative;
+    margin-right: 35px;
+}
+
+#footer-contact h5 {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-size: 20px;
+    font-style: normal;
+    color: #383848;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#footer-form input {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+}
+
+#footer-name,
+#footer-email {
+    width: 330px;
+    height: 50px;
+}
+
+#footer-name,
+#footer-email,
+#footer-message {
+    font-style: normal;
+    font-size: 15px;
+    color: #636375;
+    background-color: #fff;
+    border-color: 1px solid #e5e5ee;
+    line-height: normal;
+    margin: 0px 50px 20px 50px;
+    padding: 0px 5px;
+}
+
+#footer-message {
+    width: 330px;
+    height: 143px;
+}
+
+#footer-button-send {
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #429c9d;
+    width: 200px;
+    height: 50px; 
+    border-style: none;
+    position: relative;
+    margin-left: 195px;
+}
+
+/* FOOTER OTHER CATEGORIES AND SOCIAL LINKS */
+
+#footer-other-social-links {
+    float: left;
+    margin-top: 54px;
+    width: 15%
+    padding-top: 16px;
+}
+
+#footer-other-categories p,
+#footer-social-links p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    font-size: 26px;
+    color: #fff;
+}
+
+ul#footer-other-categories-links {
+    margin-top: 10px;
+}
+
+#footer-other-categories ul a {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f0b56f;
+}
+
+#footer-other-categories ul a li {
+    padding-bottom: 10px;
+}
+
+#footer-social-links p {
+    margin-top: 30px;
+}
+
+.footer-social-icons {
+    width: 30%;
+    height: 30%;
+}
+
+#footer-social li {
+    list-style: none;
+    display: inline;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+ul#footer-social {
+    padding-top: 5px;
+}
+
+/* FOOTER AFFILIATES */
+
+#footer-affiliate-links {
+    margin-top: 37px;
+    width: 15%;
+    display: inline-block;
+}
+
+#footer-affiliate-links p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    font-size: 26px;
+    color: #fff;
+}
+
+#footer-affiliates {
+    margin-top: -8px;
+}
+
+#footer-affiliates li {
+    list-style: none;
+}
+
+.footer-affiliate-logo {
+    padding: 10px 0;
+}
+
+#footer-affiliate-logo-cfw {
+    margin-left: -14px;
+    width: 50%;
+    height: 50%;
+}
+
+#footer-affiliate-logo-hog {
+    margin-left: -4px;
+    width: 50%;
+    height: 50%;
+}
+
+#footer-affiliate-logo-nts {
+    margin-left: -15px;
+    width: 70%;
+    height: 70%;
+}
+
+/* FOOTER COPYRIGHT */
+
+#footer-copyright {
+    clear: both;
+}
+
+ul#footer-copyright-links {
+	margin-left: 30px;
+}
+
+#footer-copyright ul li {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    font-size: 11px;
+    padding: 20px 0px 20px 16px;
+    list-style: none;
+    display: inline-block;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.secondary-links {
+    color: #f0b56f;
+}
+
+/* FOOTER HOVER */
+
+.footer-categories:hover,
+.secondary-links:hover {
+    color: #429c9d;
+}
+
+.footer-social-icons:hover {
+    opacity: .7;
+}
 
 /*MEDIA QUERIES*/
 
