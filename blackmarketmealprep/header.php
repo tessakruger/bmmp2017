@@ -98,6 +98,7 @@
 	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/logo.png" height="45px" alt="logo"/>&nbsp;&nbsp;</li>
 	  		<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" href="https://www.facebook.com/blackmarketmealprep/" alt="facebook"/> </li>
 	    	<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" href="https://www.instagram.com/blackmarketmealprep/" alt="instagram"/> </li>
+	    	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/hamburger_menu.png" alt="menu"/></li>
 	  	</ul>
 	  	<ul class="mobile-info">
 	  		<li>Order Now</li>

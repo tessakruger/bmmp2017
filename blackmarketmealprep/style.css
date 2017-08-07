@@ -928,7 +928,7 @@ ul#footer-social {
 }
 
 ul#footer-copyright-links {
-    margin-left: 30px;
+	margin-left: 30px;
 }
 
 #footer-copyright ul li {
@@ -1136,7 +1136,7 @@ ul#footer-copyright-links {
         font-size: medium; 
     }
     .mobile-social li:first-child{
-        padding-right: 125px;
+        padding-right: 140px;
     }
     .mobile-info {
         padding-top: 10px;
