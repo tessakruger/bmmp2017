@@ -310,7 +310,10 @@ button {
 
 .order-step-2 {order: 2}
 
-.order-step-3 {order: 3}
+.order-step-3 {
+    order: 3;
+    position: relative;
+}
 
 .order-step-4 {order: 4}
 
@@ -359,6 +362,31 @@ button {
 
 .order-line.spacer.second {width: 95%;}
 
+#order-delivery-schedule {
+    background: none;
+    position: absolute;
+}
+
+#order-delivery-text {
+    opacity: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 300px;
+    background: #229091;
+    padding: 15px 25px;
+    border-radius: 3px;
+    -webkit-transition: 250ms ease-in;
+    -moz-transition: 250ms ease-in;
+    -o-transition: 250ms ease-in;
+    transition: 250ms ease-in;
+    transform: translate(0,-80px);
+}
+
+#order-delivery-schedule:hover #order-delivery-text {
+    opacity: 1;
+    transform: translate(0,-110px);
+}
 
 /*--------------------------------------------------------------
 ## Home: What People Are Saying
@@ -1071,7 +1099,7 @@ ul#footer-copyright-links {
 
 /*ALL MOBILE MEDIA QUERIES*/
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .tablet-orders {
         display: none !important;
     }
@@ -1143,5 +1171,25 @@ ul#footer-copyright-links {
     }
     .mobile-info li{
         padding-right: 33px;
+    }
+    /*hamburger*/
+    .mobile-menu {
+        display: none;
+        background-color: #171722;
+        color: #FFFFFF;
+        height: 250px;
+        width: 335px;
+        position: absolute;
+        right: 0px;
+    }
+    .mobile-menu li {
+        padding: 15px;
+        display: inherit;
+    }
+    .mobile-menu li:hover{
+        background-color: #3b3b4d;
+    }
+    .expand {
+    display: block !important; 
     }
 }
