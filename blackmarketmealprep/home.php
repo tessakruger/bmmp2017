@@ -133,7 +133,7 @@
 				<p class="team-history">Black Market started as a way for my fiancé and I to get fit and ready for our wedding. We were discouraged by what other meal prep companies had to offer, the same repetitive menus, served by people with no culinary experience. Given my seven years of culinary training, creativity, and passion for food, I knew I could elevate the typical meal prep into something more enjoyable. I began prepping our meals in my mother’s kitchen, creating healthy and delicious meals week after week. Eventually, people started asking us to make meals for them too. They loved how healthy it was and delicious it tasted. Before long, the word spread and more people started asking us to meal prep for them. Finding the need for delicious, healthy, reasonably priced meal prep lead us to create Black Market Meal Prep.</p>
 			</div>
 			<div class="team-right-panel"> 
-				<!-- Bryan Tapia Profile -->
+				<!-- Bryan Profile -->
 				<ul class="team" id="team-bryan"> 
 					<li>
 						<div class="team-author">
@@ -145,7 +145,7 @@
 						</div>
 					</li>
 				</ul>
-				<!-- Margarita Tapia Profile -->
+				<!-- Margarita Profile -->
 				<ul class="team" id="team-margarita"> 
 					<li>
 						<div class="team-author">
