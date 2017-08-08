@@ -255,8 +255,13 @@ button {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-
-
+/*Slider*/
+.header-slider {
+    width: 100% !important;
+}
+.metaslider .flexslider {
+    margin: 0px !important;
+}
 /*--------------------------------------------------------------
 ## Home: How to Order
 --------------------------------------------------------------*/
@@ -641,38 +646,55 @@ button {
     width: 100%;
     height: 582px;
     background-color: #f4f2ed;
-    margin-top: 727px;
+    margin-top: 726px;
 }
 
 .team-left-panel {
-    width: 60%;
-    margin: 0 auto;
+    width: 58%;
+    height: 495px;
+    margin-top: 85px;
     float: left;
 }
 
 .team-right-panel {
-    width: 40%;
-    display: inline;
+    width: 37%;
+    height: 442px;
     float: right;
-    margin-top: 160px;
+    margin-right: 10px;
+    margin-top: 140px;
+    /*background-color: orange;*/
 }
 
-ul.team {
+.team {
     display: inline;
+    width: 38%;
+    height: 300px;
+    margin: 0 15px;
+}
+
+#team-bryan {
     float: left;
 }
 
 #team-margarita {
-    padding-left: 10px;
+    float: left;
+}
+
+#team-bryan,
+#team-margarita {
+    list-style: none;
+    width: 220px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 13px;
 }
 
 .team-title {
     font-family: 'Arimo', sans-serif;
     font-size: 30px;
     color: #383848;
-    text-align: center;
-    margin-top: 110px;
-    margin-bottom: 30px;
+    text-align: left;
+    margin: 0px 70px 20px 70px;
 }
 
 .team-history {
@@ -680,22 +702,13 @@ ul.team {
     font-size: 20px;
     color: #383848;
     line-height: 1.4;
-    padding-bottom: 100px;
-    margin: 0 70px;
-}
-
-.team li {
-    list-style: none;
+    margin-left: 70px;
 }
 
 .team-img {
     width: 220px;
     height: 220px;
     background-color: #151521;
-}
-
-.team-info li {
-    list-style: none;
 }
 
 .team-author {
@@ -707,6 +720,7 @@ ul.team {
 .team-info {
     background-color: #383848;
     height: 80px;
+    list-style: none;
 }
 
 .team-name {
@@ -714,7 +728,7 @@ ul.team {
     font-size: 20px;
     color: #f0b56f;
     padding-top: 10px;
-    margin: 0 10px;
+    margin-left: 15px;
 }
 
 .team-position {
@@ -722,9 +736,8 @@ ul.team {
     font-size: 16px;
     color: #f6f0f2;
     padding-top: 10px;
-    margin: 0 10px;
+    margin-left: 15px;
 }
-
 
 /* Home: Meet Our Team Hover */
 
@@ -960,7 +973,7 @@ ul#footer-social {
 }
 
 ul#footer-copyright-links {
-	margin-left: 30px;
+    margin-left: 30px;
 }
 
 #footer-copyright ul li {
@@ -995,6 +1008,37 @@ ul#footer-copyright-links {
 
 
 /*ALL TABLET MEDIA QUERIES*/
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+    .team-left-panel {
+        width: 50%;
+    }
+    .team-right-panel {
+        width: 45%;
+    }
+    .team-history {
+        font-size: 15px;
+    }
+    #team-margarita {
+        float: left;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1099px) {
+    .team-left-panel {
+        width: 100%;
+    }
+    .team-right-panel {
+        display: none;
+    }
+    .team-title {
+        font-size: 26px;
+    }
+    .team-history {
+        font-size: 18px;
+        width: 84%;
+    }
+}
 
 @media (max-width:800px) {
     /*header*/
@@ -1103,10 +1147,58 @@ ul#footer-copyright-links {
     .mobile-nav{
         display: none;
     }
+    /****** Team ******/
+    .team-left-panel {
+        width: 100%;
+    }
+    .team-right-panel {
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        left: -11%;
+        top: -75%;
+        position: relative; 
+        font-size: 30px;
+    }
+    .team-history {
+        display: none;
+    }
 }
 
-
 /*ALL MOBILE MEDIA QUERIES*/
+
+@media (max-width: 585px) {
+    .team-right-panel {
+        width: 85%;
+        left: -5%;
+        top: -75%;
+    }
+    .team-title {
+        margin: 0 38px;
+    }   
+    #team-bryan, 
+    #team-margarita {
+        width: 150px;
+    }  
+    .team-author {
+        background-color: #151521;
+        width: 150px;
+        height: 150px;
+    }
+    .team-img {
+        width: 150px;
+        height: 150px; 
+    }
+    .team-info {
+        height: 62px;
+    }   
+    .team-name {
+        font-size: 14px;
+    }  
+    .team-position {
+        font-size: 12px;
+    }      
+}
 
 @media (max-width: 450px) {
     .tablet-orders {
@@ -1207,6 +1299,7 @@ ul#footer-copyright-links {
     z-index: 99; 
     }
 }
+
 /*super tiny teeny x-small phones*/
 @media (max-width: 350px){
     .mobile-social li:first-child {

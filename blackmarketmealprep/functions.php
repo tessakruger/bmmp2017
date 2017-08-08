@@ -58,11 +58,15 @@ function add_my_script() {
         get_template_directory_uri() . '/js/hamburger-menu.js', // location of js file
         array('jquery') // this array lists the scripts upon which your script depends
     );
-}
 
-// Carousel Home: What People Are Saying
-add_action( 'wp_enqueue_scripts', 'add_my_script' );
-function add_my_script() {
+// add jquery for lines between how to order steps
+    wp_enqueue_script(
+        'order-step-lines', // name your script 
+        get_template_directory_uri() . '/js/order-step-lines.js', // location of js file
+        array('jquery') // this array lists the scripts upon which your script depends
+    );
+
+// add jquery for carousel home: what people are saying
     wp_enqueue_script(
       'carousel', 
       get_template_directory_uri() . '/js/carousel.js',
