@@ -300,7 +300,10 @@ button {
   margin-bottom: 10px;
 }
 
-.order-subtext {font-size: 15px}
+.order-subtext {
+    font-size: 15px;
+    text-align: center;
+}
 
 .order-steps-wrapper {
   display: flex;
@@ -314,14 +317,6 @@ button {
     width: 22%;
     position: relative;
 }
-
-.order-step.one {order: 1}
-
-.order-step.two {order: 2}
-
-.order-step.three {order: 3}
-
-.order-step.four {order: 4}
 
 .order-icon {
     height: 100px;
@@ -951,7 +946,7 @@ ul#footer-social {
 }
 
 ul#footer-copyright-links {
-	margin-left: 30px;
+    margin-left: 30px;
 }
 
 #footer-copyright ul li {
@@ -1143,6 +1138,7 @@ ul#footer-copyright-links {
 	}
 }
 
+
 /*ALL MOBILE MEDIA QUERIES*/
 
 @media (max-width: 585px) {
@@ -1286,4 +1282,39 @@ ul#footer-copyright-links {
     .mobile-info li {
     padding-right: 1.75vw;
     }
+}
+
+/*--------------------------------------------------------------
+######## Home: How to Order
+--------------------------------------------------------------*/
+
+@media (max-width: 768px){
+    .order-container {padding: 50px 30px;}
+
+    .order-line {display: none;}
+
+    .order-steps-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .order-step {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .order-icon {width: 30%;}
+
+    .order-mobile-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    #order-step-delivery {height: 100px;}
 }

@@ -18,47 +18,52 @@
 
             	<div class="order-steps-wrapper">
 
-              		<div class="order-step one">
+              		<div class="order-step">
             			<div class="order-line one"></div>
-    	        		<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png">
-    	        		</div>
-                		<div class="order-step-title">
-                			Order Now
-                		</div>
-                		<div class="order-step-description">
-                 			Browse our list of custom meals
-                		</div>
+    	        		<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png"></div>
+    	        		<div class="order-mobile-wrapper">
+	                		<div class="order-step-title">
+	                			Order Now
+	                		</div>
+	                		<div class="order-step-description">
+	                 			Browse our list of custom meals
+	                		</div>
+	                	</div>
                		</div>
-    	            <div class="order-step two">
+    	            <div class="order-step">
     	            	<div class="order-line two"></div>
-    	              	<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png">
-    	              	</div>
-    	              	<div class="order-step-title">
-    	                	Customize Meal
-    	              	</div>
-    	              	<div class="order-step-description">
-    	                	Select a protein, vegetable, and carb option from our menu. Feel free to mix and match as you like, but be sure to order a minimum of 5 meals. You can add extra protein, vegetable, and/or carb for a small additional fee.
-    	              	</div>
+    	              	<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png"></div>
+    	              	<div class="order-mobile-wrapper">
+	    	              	<div class="order-step-title">
+	    	                	Customize Meal
+	    	              	</div>
+	    	              	<div class="order-step-description">
+	    	                	Select a protein, vegetable, and carb option from our menu. Feel free to mix and match as you like, but be sure to order a minimum of 5 meals. You can add extra protein, vegetable, and/or carb for a small additional fee.
+	    	              	</div>
+	    	            </div>
     	            </div>
-    	            <div class="order-step three" id="order-popup">
+    	            <div class="order-step" id="order-popup">
     	            	<div class="order-line three"></div>
-      			        <div class="order-icon"><img id="order-step-delivery" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/delivery-icon.png">
-      			        </div>
-      			        <div class="order-step-title">
-      			        	Pickup or Delivery?
-      			        </div>
-      	            	<div class="order-step-description">
-      	              		Save money by picking up your meals from designated pick-up locations, or enter your zip code in your cart to find out if you are eligible for free local delivery or a standard flat rate. Our pick up time is from 6pm to 9pm and our Delivery time is from 4pm - 9pm.
-      	            	</div>
+      			        <div class="order-icon"><img id="order-step-delivery" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/delivery-icon.png"></div>
+      			        <div class="order-mobile-wrapper">
+	      			        <div class="order-step-title">
+	      			        	Pickup or Delivery?
+	      			        </div>
+	      	            	<div class="order-step-description">
+	      	              		Save money by picking up your meals from designated pick-up locations, or enter your zip code in your cart to find out if you are eligible for free local delivery or a standard flat rate. Our pick up time is from 6pm to 9pm and our Delivery time is from 4pm - 9pm.
+	      	            	</div>
+	      	            </div>
     	  	        </div>
-    	            <div class="order-step four">
+    	            <div class="order-step">
     	            	<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/checkout-enjoy-icon.png"></div>
-    	            	<div class="order-step-title">
-    	              		Checkout & Enjoy
-    	            	</div>
-    	            	<div class="order-step-description">
-    	              		Submit your order, and let us take care of the rest.
-    	            	</div>
+    	            	<div class="order-mobile-wrapper">
+	    	            	<div class="order-step-title">
+	    	              		Checkout & Enjoy
+	    	            	</div>
+	    	            	<div class="order-step-description">
+	    	              		Submit your order, and let us take care of the rest.
+	    	            	</div>
+	    	            </div>
     	          	</div>
 
     	          	<div id="order-delivery-text">
