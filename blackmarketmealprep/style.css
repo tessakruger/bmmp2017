@@ -357,7 +357,8 @@ button {
 #order-delivery-text {
     width: 100%;
     font-size: 2vw;
-    line-height: 8vh;
+    line-height: 2.5vw;
+    text-align: center;
     text-transform: uppercase;
     position: absolute;
     background: #229091;
@@ -365,7 +366,13 @@ button {
     border-radius: 3px;
     top: -25px;
     pointer-events: none;
-    z-index: 99;
+}
+
+@media (min-width: 1240px) {
+    #order-delivery-text {
+        font-size: 25px;
+        line-height: 31px;
+    }
 }
 
 /*--------------------------------------------------------------
