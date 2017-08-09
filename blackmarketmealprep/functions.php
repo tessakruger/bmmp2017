@@ -79,6 +79,13 @@ function add_my_script() {
       get_template_directory_uri() . '/js/order-delivery-popup.js',
       array('jquery')
     );
+
+// add jquery for carousel home: what people are saying
+    wp_enqueue_script(
+      'carousel', 
+      get_template_directory_uri() . '/js/carousel.js',
+      array('jquery')
+    );
 }
 
 //woocommerce

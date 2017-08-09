@@ -59,7 +59,7 @@
 	  	  </ul>
 	  	  <ul class="tablet-buttons">
 	  	  	<li><a target="_blank" href="https://www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" alt="facebook"/></a></li>
-	    	<li><a target="_blank" href=href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
+	    	<li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
 	  		<li><a href="<?php echo site_url(); ?>/my-account/"><button>login</button></a></li>
 	  	  </ul>
 	  	</div>	
@@ -92,14 +92,14 @@
 	  <ul>
 	  <ul class="social">
 	    <li><a target="_blank" href="https://www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png"  alt="facebook"/></a></li>
-	    <li><a target="_blank" href=href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
+	    <li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
 	  </ul>
 	</div>
 	<div class="mobile-nav">
 	  	<ul class="mobile-social">
 	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/logo.png" height="45px" alt="logo"/>&nbsp;&nbsp;</li>
 	  		<li><a target="_blank" href="https://www.facebook.com/blackmarketmealprep/"> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" alt="facebook"/></a></li>
-	    	<li><a target="_blank" href=href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
+	    	<li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
 	    	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/hamburger_menu.png" alt="menu" class="hamburger-btn"/></li>
 	    	<div class="mobile-menu">
 	    		<ul>
@@ -117,5 +117,8 @@
 	  		<li><a href="<?php echo site_url(); ?>/cart/">Cart</a></li>
 	  		<li><button><a href="<?php echo site_url(); ?>/my-account/">login</a></button></li>
 	  	</ul>
+	</div>
+	<div class="slider">
+		<div><?php echo do_shortcode("[metaslider id=1916]"); ?></div>
 	</div>
 </body>
