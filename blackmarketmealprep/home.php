@@ -6,9 +6,15 @@
 
 <?php get_header(); ?>
 <?php the_content(); ?>
-
+<div class="slider-wrapper">
+		<div class="slider">
+			<div><?php echo do_shortcode("[metaslider id=1916]"); ?>
+		</div>
+		<p class="tag-line">Fresh, Healthy, Convenient and Local</p>
+		<div class="slider-btn"><a href="<?php echo site_url(); ?>/store">CHECK OUT MENU</a></div>
+</div>		
 <div id="content">
-    <!-- Home: How to Order -->
+		<!-- Home: How to Order -->
         <section class="order-section">
         	<div class="order-container">
         		<div class="order-title-wrapper">
