@@ -65,6 +65,13 @@ function add_my_script() {
         get_template_directory_uri() . '/js/order-step-lines.js', // location of js file
         array('jquery') // this array lists the scripts upon which your script depends
     );
+
+// add jquery for carousel home: what people are saying
+    wp_enqueue_script(
+      'carousel', 
+      get_template_directory_uri() . '/js/carousel.js',
+      array('jquery')
+    );
 }
 
 //woocommerce

@@ -118,4 +118,7 @@
 	  		<li><button><a href="<?php echo site_url(); ?>/my-account/">login</a></button></li>
 	  	</ul>
 	</div>
+	<div class="slider">
+		<div><?php echo do_shortcode("[metaslider id=1916]"); ?></div>
+	</div>
 </body>
