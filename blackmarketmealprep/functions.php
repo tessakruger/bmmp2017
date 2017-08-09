@@ -61,9 +61,23 @@ function add_my_script() {
 
 // add jquery for lines between how to order steps
     wp_enqueue_script(
-        'order-step-lines', // name your script 
-        get_template_directory_uri() . '/js/order-step-lines.js', // location of js file
-        array('jquery') // this array lists the scripts upon which your script depends
+        'order-step-lines',
+        get_template_directory_uri() . '/js/order-step-lines.js',
+        array('jquery')
+    );
+
+// add jquery for carousel home: what people are saying
+    wp_enqueue_script(
+      'carousel', 
+      get_template_directory_uri() . '/js/carousel.js',
+      array('jquery')
+    );
+
+// add jquery for how to order: delivery pop up
+    wp_enqueue_script(
+      'order-delivery-popup', 
+      get_template_directory_uri() . '/js/order-delivery-popup.js',
+      array('jquery')
     );
 
 // add jquery for carousel home: what people are saying

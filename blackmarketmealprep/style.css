@@ -300,7 +300,10 @@ button {
   margin-bottom: 10px;
 }
 
-.order-subtext {font-size: 15px}
+.order-subtext {
+    font-size: 15px;
+    text-align: center;
+}
 
 .order-steps-wrapper {
   display: flex;
@@ -315,14 +318,6 @@ button {
     position: relative;
 }
 
-.order-step.one {order: 1}
-
-.order-step.two {order: 2}
-
-.order-step.three {order: 3}
-
-.order-step.four {order: 4}
-
 .order-icon {
     height: 100px;
     margin-bottom: 10px;
@@ -333,7 +328,7 @@ button {
 
 #order-step-icon {height: 75px}
 
-#order-step-delivery {height: 120px}
+#order-step-delivery {height: 120px;}
 
 .order-step-title {
   font-size: 24px;
@@ -354,35 +349,25 @@ button {
 
 .order-line.three {left: 95%;}
 
-#order-delivery-schedule {
-    background: none;
-    position: absolute;
-}
-
-#order-delivery-schedule {
-    background: none;
-    position: absolute;
-}
-
 #order-delivery-text {
-    opacity: 0;
-    font-size: 12px;
+    width: 100%;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    text-align: center;
     text-transform: uppercase;
     position: absolute;
-    width: 300px;
     background: #229091;
-    padding: 15px 25px;
+    padding: 25px;
     border-radius: 3px;
-    -webkit-transition: 250ms ease-in;
-    -moz-transition: 250ms ease-in;
-    -o-transition: 250ms ease-in;
-    transition: 250ms ease-in;
-    transform: translate(0,-80px);
+    top: -25px;
+    pointer-events: none;
 }
 
-#order-delivery-schedule:hover #order-delivery-text {
-    opacity: 1;
-    transform: translate(0,-110px);
+@media (min-width: 1240px) {
+    #order-delivery-text {
+        font-size: 25px;
+        line-height: 31px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -625,23 +610,22 @@ button {
     transform: translateY(-27px) rotate(45deg);
 }
 
-
 /*--------------------------------------------------------------
 ## Home: Meet Our Team 
 --------------------------------------------------------------*/
 
 .team-container {
-    width: 100%;
-    height: 582px;
-    background-color: #f4f2ed;
-    margin-top: 726px;
+	width: 100%;
+	height: 582px;
+	background-color: #f4f2ed;
+ 	margin-top: 726px;
 }
 
 .team-left-panel {
-    width: 58%;
-    height: 495px;
+	width: 58%;
+	height: 495px;
     margin-top: 85px;
-    float: left;
+	float: left;
 }
 
 .team-right-panel {
@@ -650,22 +634,22 @@ button {
     float: right;
     margin-right: 10px;
     margin-top: 140px;
-    /*background-color: orange;*/
+	/*background-color: orange;*/
 }
 
 .team {
-    display: inline;
-    width: 38%;
-    height: 300px;
-    margin: 0 15px;
+	display: inline;
+	width: 38%;
+	height: 300px;
+	margin: 0 15px;
 }
 
 #team-bryan {
-    float: left;
+	float: left;
 }
 
 #team-margarita {
-    float: left;
+	float: left;
 }
 
 #team-bryan,
@@ -686,43 +670,43 @@ button {
 }
 
 .team-history {
-    font-family: 'Arimo', sans-serif;
-    font-size: 20px;
-    color: #383848;
-    line-height: 1.4;
-    margin-left: 70px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	color: #383848;
+	line-height: 1.4;
+	margin-left: 70px;
 }
 
 .team-img {
-    width: 220px;
-    height: 220px;
-    background-color: #151521;
+	width: 220px;
+	height: 220px;
+	background-color: #151521;
 }
 
 .team-author {
-    background-color: #151521;
-    width: 220px;
-    height: 220px;
+	background-color: #151521;
+	width: 220px;
+	height: 220px;
 }
 
 .team-info {
-    background-color: #383848;
-    height: 80px;
-    list-style: none;
+	background-color: #383848;
+	height: 80px;
+	list-style: none;
 }
 
 .team-name {
-    font-family: 'Arimo', sans-serif;
-    font-size: 20px;
-    color: #f0b56f;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	color: #f0b56f;
     padding-top: 10px;
     margin-left: 15px;
 }
 
 .team-position {
-    font-family: 'Arimo', sans-serif;
-    font-size: 16px;
-    color: #f6f0f2;
+	font-family: 'Arimo', sans-serif;
+	font-size: 16px;
+	color: #f6f0f2;
     padding-top: 10px;
     margin-left: 15px;
 }
@@ -730,25 +714,25 @@ button {
 /* Home: Meet Our Team Hover */
 
 .team-name-link:link {
-    text-decoration: none;
-    color: #f0b372;
+	text-decoration: none;
+	color: #f0b372;
 }
 
 .team-pos-link:link {
-    text-decoration: none;
-    color: #f6f0f2;
+	text-decoration: none;
+	color: #f6f0f2;
 }
 
 .team-name-link:hover {
-    color: #f6f0f2;
+	color: #f6f0f2;
 }
 
 .team-pos-link:hover {
-    color: #171722;
+	color: #171722;
 }
 
 .team-img:hover {
-    opacity: 0.7;
+	opacity: 0.7;
 }
 
 
@@ -995,37 +979,276 @@ ul#footer-copyright-links {
 /*MEDIA QUERIES*/
 
 
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+
+/* MAP IMAGE */
+
+.footer-map-image {
+    width: 100%;
+    height: 100%;
+}
+
+#footer-container {
+    width: 100%;
+    height: 100%;
+    background-color: #20202f;
+    margin-top: -5px;
+}
+
+.footer-div {
+    width: 15%;
+    display: inline;
+    margin-right: 45px;
+}
+
+/* FOOTER LOGO */
+.footer-bmmp-logo {
+    width: 25%;
+    height: 25%;
+    margin-left: 35px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 35px;
+}
+
+/* FOOTER CONTACT FORM */
+#footer-contact {
+    width: 31%;
+    height: 500px;
+    background-color: #fff;
+    float: left;
+    margin-top: -164px;
+    position: relative;
+    margin-right: 35px;
+}
+
+#footer-contact h5 {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-size: 20px;
+    font-style: normal;
+    color: #383848;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#footer-form input {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+}
+
+#footer-name,
+#footer-email {
+    width: 330px;
+    height: 50px;
+}
+
+#footer-name,
+#footer-email,
+#footer-message {
+    font-style: normal;
+    font-size: 15px;
+    color: #636375;
+    background-color: #fff;
+    border-color: 1px solid #e5e5ee;
+    line-height: normal;
+    margin: 0px 50px 20px 50px;
+    padding: 0px 5px;
+}
+
+#footer-message {
+    width: 330px;
+    height: 143px;
+}
+
+#footer-button-send {
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #429c9d;
+    width: 200px;
+    height: 50px; 
+    border-style: none;
+    position: relative;
+    margin-left: 195px;
+}
+
+/* FOOTER OTHER CATEGORIES AND SOCIAL LINKS */
+
+#footer-other-social-links {
+    float: left;
+    margin-top: 54px;
+    width: 15%
+    padding-top: 16px;
+}
+
+#footer-other-categories p,
+#footer-social-links p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    font-size: 26px;
+    color: #fff;
+}
+
+ul#footer-other-categories-links {
+    margin-top: 10px;
+}
+
+#footer-other-categories ul a {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f0b56f;
+}
+
+#footer-other-categories ul a li {
+    padding-bottom: 10px;
+}
+
+#footer-social-links p {
+    margin-top: 30px;
+}
+
+.footer-social-icons {
+    width: 30%;
+    height: 30%;
+}
+
+#footer-social li {
+    list-style: none;
+    display: inline;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+ul#footer-social {
+    padding-top: 5px;
+}
+
+/* FOOTER AFFILIATES */
+
+#footer-affiliate-links {
+    margin-top: 37px;
+    width: 15%;
+    display: inline-block;
+}
+
+#footer-affiliate-links p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    font-size: 26px;
+    color: #fff;
+}
+
+#footer-affiliates {
+    margin-top: -8px;
+}
+
+#footer-affiliates li {
+    list-style: none;
+}
+
+.footer-affiliate-logo {
+    padding: 10px 0;
+}
+
+#footer-affiliate-logo-cfw {
+    margin-left: -14px;
+    width: 50%;
+    height: 50%;
+}
+
+#footer-affiliate-logo-hog {
+    margin-left: -4px;
+    width: 50%;
+    height: 50%;
+}
+
+#footer-affiliate-logo-nts {
+    margin-left: -15px;
+    width: 70%;
+    height: 70%;
+}
+
+/* FOOTER COPYRIGHT */
+
+#footer-copyright {
+    clear: both;
+}
+
+ul#footer-copyright-links {
+    margin-left: 30px;
+}
+
+#footer-copyright ul li {
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-style: normal;
+    font-size: 11px;
+    padding: 20px 0px 20px 16px;
+    list-style: none;
+    display: inline-block;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.secondary-links {
+    color: #f0b56f;
+}
+
+/* FOOTER HOVER */
+
+.footer-categories:hover,
+.secondary-links:hover {
+    color: #429c9d;
+}
+
+.footer-social-icons:hover {
+    opacity: .7;
+}
+
+/*MEDIA QUERIES*/
+
+
 /*ALL TABLET MEDIA QUERIES*/
 
 @media (min-width: 1100px) and (max-width: 1300px) {
-    .team-left-panel {
-        width: 50%;
-    }
-    .team-right-panel {
-        width: 45%;
-    }
-    .team-history {
-        font-size: 15px;
-    }
-    #team-margarita {
-        float: left;
-    }
+	.team-left-panel {
+	    width: 50%;
+	}
+	.team-right-panel {
+	    width: 45%;
+	}
+	.team-history {
+	    font-size: 15px;
+	}
+	#team-margarita {
+	    float: left;
+	}
 }
 
 @media (min-width: 801px) and (max-width: 1099px) {
-    .team-left-panel {
-        width: 100%;
-    }
-    .team-right-panel {
-        display: none;
-    }
-    .team-title {
-        font-size: 26px;
-    }
-    .team-history {
-        font-size: 18px;
-        width: 84%;
-    }
+	.team-left-panel {
+		width: 100%;
+	}
+	.team-right-panel {
+	    display: none;
+	}
+	.team-title {
+    	font-size: 26px;
+	}
+	.team-history {
+	    font-size: 18px;
+	    width: 84%;
+	}
 }
 
 @media (max-width:800px) {
@@ -1135,57 +1358,58 @@ ul#footer-copyright-links {
     .mobile-nav{
         display: none;
     }
-    /****** Team ******/
-    .team-left-panel {
-        width: 100%;
-    }
-    .team-right-panel {
-        width: 80%;
-        height: 300px;
-        margin: 0 auto;
-        left: -11%;
-        top: -75%;
-        position: relative; 
-        font-size: 30px;
-    }
-    .team-history {
-        display: none;
-    }
+	/****** Team ******/
+	.team-left-panel {
+		width: 100%;
+	}
+	.team-right-panel {
+	    width: 81%;
+	    height: 300px;
+	    margin: 0 auto;
+		left: -11%;
+    	top: -75%;
+    	position: relative; 
+		font-size: 30px;
+	}
+	.team-history {
+	    display: none;
+	}
 }
+
 
 /*ALL MOBILE MEDIA QUERIES*/
 
-@media (max-width: 585px) {
-    .team-right-panel {
-        width: 85%;
-        left: -5%;
-        top: -75%;
-    }
-    .team-title {
-        margin: 0 38px;
-    }   
-    #team-bryan, 
-    #team-margarita {
-        width: 150px;
-    }  
-    .team-author {
-        background-color: #151521;
-        width: 150px;
-        height: 150px;
-    }
-    .team-img {
-        width: 150px;
-        height: 150px; 
-    }
-    .team-info {
-        height: 62px;
-    }   
-    .team-name {
-        font-size: 14px;
-    }  
-    .team-position {
-        font-size: 12px;
-    }      
+@media (max-width: 600px) {
+	.team-right-panel {
+	    width: 86%;
+    	left: -5%;
+    	top: -75%;
+	}
+	.team-title {
+	    margin: 0 38px;
+	}	
+	#team-bryan, 
+	#team-margarita {
+	    width: 150px;
+	}  
+	.team-author {
+	    background-color: #151521;
+	    width: 150px;
+	    height: 150px;
+	}
+	.team-img {
+	    width: 150px;
+	    height: 150px; 
+	}
+	.team-info {
+	    height: 62px;
+	}	
+	.team-name {
+	    font-size: 14px;
+	}  
+	.team-position {
+	    font-size: 12px;
+	}      
 }
 
 @media (max-width: 450px) {
@@ -1296,4 +1520,39 @@ ul#footer-copyright-links {
     .mobile-info li {
     padding-right: 1.75vw;
     }
+}
+
+/*--------------------------------------------------------------
+######## Home: How to Order
+--------------------------------------------------------------*/
+
+@media (max-width: 768px){
+    .order-container {padding: 50px 30px;}
+
+    .order-line {display: none;}
+
+    .order-steps-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .order-step {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .order-icon {width: 30%;}
+
+    .order-mobile-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    #order-step-delivery {height: 100px;}
 }
