@@ -66,13 +66,6 @@ function add_my_script() {
         array('jquery')
     );
 
-// add jquery for carousel home: what people are saying
-    wp_enqueue_script(
-      'carousel', 
-      get_template_directory_uri() . '/js/carousel.js',
-      array('jquery')
-    );
-
 // add jquery for how to order: delivery pop up
     wp_enqueue_script(
       'order-delivery-popup', 

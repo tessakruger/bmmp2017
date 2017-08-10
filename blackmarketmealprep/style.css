@@ -1030,6 +1030,14 @@ ul#footer-copyright-links {
 	#team-margarita {
 	    float: left;
 	}
+    .tag-line{
+        margin-left: 37%;
+        top: 367px;
+    }
+    .slider-btn{
+    margin-left: 40%;
+    top: 394px;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 1099px) {
@@ -1046,6 +1054,16 @@ ul#footer-copyright-links {
 	    font-size: 18px;
 	    width: 84%;
 	}
+
+    .tag-line{
+        margin-left: 35%;
+        top: 325px;
+    }
+
+    .slider-btn{
+        margin-left: 40%;
+        top: 361px;
+    }
 }
 
 @media (max-width:800px) {
@@ -1171,6 +1189,16 @@ ul#footer-copyright-links {
 	.team-history {
 	    display: none;
 	}
+    
+    .tag-line{
+    margin-left: 32%;
+    top: 345px;
+    }
+    
+    .slider-btn{
+    margin-left: 38%;
+    top: 370px;
+    }
 }
 
 
