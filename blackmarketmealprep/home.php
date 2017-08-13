@@ -170,7 +170,17 @@
 		</div>
 	</section>
 	<!-- end of Home: Meet Our Team -->
-
+	<!-- instagram feed -->	
+	<section>
+		<div class="insta-container">
+			<div>
+			<?php echo do_shortcode('[instagram-feed]'); ?>
+			</div>
+		</div>
+	</section>
+	<!-- instagram feed -->
+	</div>
+	<!--end instagram feed-->
 </div><!--  load whatever content -->
 
 <?php get_footer(); ?>
