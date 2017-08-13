@@ -85,7 +85,8 @@ function add_my_script() {
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
 add_theme_support( 'woocommerce' ); }
-
+//woocommerce add to cart button display on shop page
+add_action( ‘woocommerce_after_shop_loop_item’, ‘woocommerce_template_loop_add_to_cart’, 10 );
 /** FOR FUTURE USE
 * Use Post Category to load template
 
