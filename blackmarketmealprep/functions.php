@@ -81,6 +81,27 @@ function add_my_script() {
     );
 }
 
+// add js for display menu meal items
+    wp_enqueue_script(
+      'view-meal-menu', 
+      get_template_directory_uri() . '/js/view-meal-menu.js',
+      array('jquery')
+    );
+
+// add js for 'add to cart' overlay on meal menu items
+    wp_enqueue_script(
+      'overlay', 
+      get_template_directory_uri() . '/js/overlay.js',
+      array('jquery')
+    );
+
+// add js to pop-up delivery and pick up information
+    wp_enqueue_script(
+      'delivery-popup', 
+      get_template_directory_uri() . '/js/delivery-popup.js',
+      array('jquery')
+    );
+
 //woocommerce
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
