@@ -297,6 +297,32 @@ button {
     text-decoration: none;
     color: #fff;
 }
+
+/*--------------------------------------------------------------
+## Subheader Styles
+--------------------------------------------------------------*/
+.subheader-container {
+    display: block;
+    background: #272735;
+    width: 100%;
+    text-align: center;
+    font-family: Arimo, sans-serif;
+}
+
+.subheader-text,
+.description-text {
+    color: #fff;
+}
+
+.subheader-text {
+    padding: 50px 25px 10px 25px;
+    font-size: 40px;
+}
+
+.description-text {
+    font-size: 17px;
+    padding: 0 25px 60px 25px;
+}
 /*--------------------------------------------------------------
 ## Home: How to Order
 --------------------------------------------------------------*/
@@ -318,6 +344,7 @@ button {
   max-width: 1040px;
   font-family: Arimo, sans-serif;
   color: #fff;
+  position: relative;
 }
 
 .order-title-wrapper {
@@ -392,17 +419,60 @@ button {
     text-transform: uppercase;
     position: absolute;
     background: #229091;
-    padding: 25px;
+    padding: 40px;
     border-radius: 3px;
-    top: -25px;
+    top: 0px;
     pointer-events: none;
+    z-index: 99;
+    left: -237%;
 }
 
-@media (min-width: 1240px) {
-    #order-delivery-text {
-        font-size: 25px;
-        line-height: 31px;
-    }
+#order-btn {
+    background: #229091;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 20px;
+/*    box-shadow: 0px 10px 5px #292828;*/
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-window {
+    width: calc(100% - 100px);
+    padding: 50px 100px;
+    background: #171722;
+    color: #fff;
+    position: absolute;
+    margin: auto;
+    border-radius: 20px;
+    display: none;
+}
+
+.modal-container {
+    max-width: 1020px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.delivery-schedule,
+.pickup-options {
+    font-family: Arimo, sans-serif;
+    margin: 25px auto;
+}
+
+.important {
+    font-size: 20px;
+}
+
+#close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
 }
 
 /*--------------------------------------------------------------
@@ -651,17 +721,17 @@ button {
 --------------------------------------------------------------*/
 
 .team-container {
-	width: 100%;
-	height: 582px;
-	background-color: #f4f2ed;
- 	margin-top: 726px;
+    width: 100%;
+    height: 582px;
+    background-color: #f4f2ed;
+    margin-top: 726px;
 }
 
 .team-left-panel {
-	width: 58%;
-	height: 495px;
+    width: 58%;
+    height: 495px;
     margin-top: 85px;
-	float: left;
+    float: left;
 }
 
 .team-right-panel {
@@ -670,22 +740,22 @@ button {
     float: right;
     margin-right: 10px;
     margin-top: 140px;
-	/*background-color: orange;*/
+    /*background-color: orange;*/
 }
 
 .team {
-	display: inline;
-	width: 38%;
-	height: 300px;
-	margin: 0 15px;
+    display: inline;
+    width: 38%;
+    height: 300px;
+    margin: 0 15px;
 }
 
 #team-bryan {
-	float: left;
+    float: left;
 }
 
 #team-margarita {
-	float: left;
+    float: left;
 }
 
 #team-bryan,
@@ -706,43 +776,43 @@ button {
 }
 
 .team-history {
-	font-family: 'Arimo', sans-serif;
-	font-size: 20px;
-	color: #383848;
-	line-height: 1.4;
-	margin-left: 70px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #383848;
+    line-height: 1.4;
+    margin-left: 70px;
 }
 
 .team-img {
-	width: 220px;
-	height: 220px;
-	background-color: #151521;
+    width: 220px;
+    height: 220px;
+    background-color: #151521;
 }
 
 .team-author {
-	background-color: #151521;
-	width: 220px;
-	height: 220px;
+    background-color: #151521;
+    width: 220px;
+    height: 220px;
 }
 
 .team-info {
-	background-color: #383848;
-	height: 80px;
-	list-style: none;
+    background-color: #383848;
+    height: 80px;
+    list-style: none;
 }
 
 .team-name {
-	font-family: 'Arimo', sans-serif;
-	font-size: 20px;
-	color: #f0b56f;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #f0b56f;
     padding-top: 10px;
     margin-left: 15px;
 }
 
 .team-position {
-	font-family: 'Arimo', sans-serif;
-	font-size: 16px;
-	color: #f6f0f2;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    color: #f6f0f2;
     padding-top: 10px;
     margin-left: 15px;
 }
@@ -750,30 +820,79 @@ button {
 /* Home: Meet Our Team Hover */
 
 .team-name-link:link {
-	text-decoration: none;
-	color: #f0b372;
+    text-decoration: none;
+    color: #f0b372;
 }
 
 .team-pos-link:link {
-	text-decoration: none;
-	color: #f6f0f2;
+    text-decoration: none;
+    color: #f6f0f2;
 }
 
 .team-name-link:hover {
-	color: #f6f0f2;
+    color: #f6f0f2;
 }
 
 .team-pos-link:hover {
-	color: #171722;
+    color: #171722;
 }
 
 .team-img:hover {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 
 
 ul.team-info:hover {
     background-color: #229091;
+}
+
+/* INSTAGRAM FEED */
+.insta-header {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.insta-header h2 {
+    font-size: large;
+    font-family:'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    font-weight: bold;
+}
+.insta-header p{
+    font-size: small;
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    color: #b6b2b2;
+}
+
+.insta-container{
+    padding-bottom: 20px;
+}
+.sbi_photo.sbi_imgLiquid_bgSize.sbi_imgLiquid_ready{
+    height: 110px !important;
+    width: 140px !important;
+}
+.sbi_photo_wrap {
+    height: 110px !important;
+    width: 140px !important;
+}
+.sb_instagram_header {
+    display: none;
+    padding: 0px !important;
+    padding-bottom: 0px !important;
+}
+#sb_instagram {
+    padding-bottom: 0px !important;
+}
+.sbi_header_text {
+    display: none;
+}
+.sbi_bio{
+    display: none;
+}
+.sbi_header_img{
+    display: none;
+}
+#sbi_load{
+    display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1012,24 +1131,174 @@ ul#footer-copyright-links {
     opacity: .7;
 }
 
+/*--------------------------------------------------------------
+######## Shop: Menu
+--------------------------------------------------------------*/
+.shop-menu {
+    background: #fff;
+    width: 100%;
+    height: 500px;
+    font-family: Arimo, sans-serif;
+}
+
+.shop-navbar {
+    width: 100%;
+    padding: 20px 25px;
+    background: #171722;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.shop-navbar-list {
+    width: 100%;
+    max-width: 918px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+}
+
+ #shop-navbar-list {
+    background: white;
+    width: 100%;
+    font-size: 5vw;
+    border: none;
+    border-bottom: 2px solid #333;
+    max-width: 340px;
+    padding: 10px;
+ }
+
+.shop-menu-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+}
+
+.shop-meals-wrapper {
+    background: #fff;
+    width: 100%;
+    max-width: 968px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 25px;
+
+}
+
+.shop-meal {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: calc(100% * (1/4) - 10px);
+    text-align: center;
+}
+
+.img-container {
+    position: relative;
+}
+
+.shop-meal-image,
+.overlay {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    opacity: 0;
+    transition: 250ms ease-in;
+    background-color: rgba(240, 180, 110, 0.8);
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #20202f;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.shop-meal-details {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 0 15px;
+}
+
+.meal-name {
+    color: #000;
+    font-size: 0.8em;
+}
+
+.meal-price {
+    color: #f0b46e;
+    font-size: 1em;
+}
+
+.selected {color: #f0b46e;}
+
+select#shop-navbar-list {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: url(assets/images/product-placeholders/chevron.svg) no-repeat right;
+    background-size: 20px;
+}
+
+.item-group {
+    position: relative;
+}
+
+.selected-arrow {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    margin-left: -9px;
+    z-index: 99;
+    transform: rotate(45deg);
+}
+
+nav select#shop-navbar-list {display: none; }
+
 /*MEDIA QUERIES*/
 
 
 /*ALL TABLET MEDIA QUERIES*/
 
 @media (min-width: 1100px) and (max-width: 1300px) {
-	.team-left-panel {
-	    width: 50%;
-	}
-	.team-right-panel {
-	    width: 45%;
-	}
-	.team-history {
-	    font-size: 15px;
-	}
-	#team-margarita {
-	    float: left;
-	}
+    .team-left-panel {
+        width: 50%;
+    }
+    .team-right-panel {
+        width: 45%;
+    }
+    .team-history {
+        font-size: 15px;
+    }
+    #team-margarita {
+        float: left;
+    }
     .tag-line{
         margin-left: 37%;
         top: 367px;
@@ -1041,19 +1310,19 @@ ul#footer-copyright-links {
 }
 
 @media (min-width: 801px) and (max-width: 1099px) {
-	.team-left-panel {
-		width: 100%;
-	}
-	.team-right-panel {
-	    display: none;
-	}
-	.team-title {
-    	font-size: 26px;
-	}
-	.team-history {
-	    font-size: 18px;
-	    width: 84%;
-	}
+    .team-left-panel {
+        width: 100%;
+    }
+    .team-right-panel {
+        display: none;
+    }
+    .team-title {
+        font-size: 26px;
+    }
+    .team-history {
+        font-size: 18px;
+        width: 84%;
+    }
 
     .tag-line{
         margin-left: 35%;
@@ -1173,22 +1442,22 @@ ul#footer-copyright-links {
     .mobile-nav{
         display: none;
     }
-	/****** Team ******/
-	.team-left-panel {
-		width: 100%;
-	}
-	.team-right-panel {
-	    width: 81%;
-	    height: 300px;
-	    margin: 0 auto;
-		left: -11%;
-    	top: -75%;
-    	position: relative; 
-		font-size: 30px;
-	}
-	.team-history {
-	    display: none;
-	}
+    /****** Team ******/
+    .team-left-panel {
+        width: 100%;
+    }
+    .team-right-panel {
+        width: 81%;
+        height: 300px;
+        margin: 0 auto;
+        left: -11%;
+        top: -75%;
+        position: relative; 
+        font-size: 30px;
+    }
+    .team-history {
+        display: none;
+    }
     
     .tag-line{
     margin-left: 32%;
@@ -1205,36 +1474,36 @@ ul#footer-copyright-links {
 /*ALL MOBILE MEDIA QUERIES*/
 
 @media (max-width: 600px) {
-	.team-right-panel {
-	    width: 86%;
-    	left: -5%;
-    	top: -75%;
-	}
-	.team-title {
-	    margin: 0 38px;
-	}	
-	#team-bryan, 
-	#team-margarita {
-	    width: 150px;
-	}  
-	.team-author {
-	    background-color: #151521;
-	    width: 150px;
-	    height: 150px;
-	}
-	.team-img {
-	    width: 150px;
-	    height: 150px; 
-	}
-	.team-info {
-	    height: 62px;
-	}	
-	.team-name {
-	    font-size: 14px;
-	}  
-	.team-position {
-	    font-size: 12px;
-	}      
+    .team-right-panel {
+        width: 86%;
+        left: -5%;
+        top: -75%;
+    }
+    .team-title {
+        margin: 0 38px;
+    }   
+    #team-bryan, 
+    #team-margarita {
+        width: 150px;
+    }  
+    .team-author {
+        background-color: #151521;
+        width: 150px;
+        height: 150px;
+    }
+    .team-img {
+        width: 150px;
+        height: 150px; 
+    }
+    .team-info {
+        height: 62px;
+    }   
+    .team-name {
+        font-size: 14px;
+    }  
+    .team-position {
+        font-size: 12px;
+    }      
 }
 
 @media (max-width: 450px) {
@@ -1350,6 +1619,12 @@ ul#footer-copyright-links {
 /*--------------------------------------------------------------
 ######## Home: How to Order
 --------------------------------------------------------------*/
+@media (min-width: 1240px) {
+    #order-delivery-text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
 
 @media (max-width: 768px){
     .order-container {padding: 50px 30px;}
@@ -1379,5 +1654,53 @@ ul#footer-copyright-links {
         padding-left: 25px;
     }
 
-    #order-step-delivery {height: 100px;}
+    #order-popup {
+        display: flex;
+        align-content: center;
+    }
+
+    #order-delivery-text {
+        font-size: 3vw;
+        line-height: 1.5em;
+        height: 200px;
+        left: 0;
+    }
+
+    .modal-window {
+        width: calc(100% - 60px);
+        padding: 50px;
+    }
+}
+
+@media (max-width: 414px){
+    #order-delivery-text {
+        font-size: 16px;
+        line-height: 1.25em;
+        padding: 20px;
+}
+
+/*--------------------------------------------------------------
+######## Shop: Menu
+--------------------------------------------------------------*/
+
+@media (max-width: 640px) {
+    nav ul.shop-navbar-list { display: none; }
+    
+    nav select#shop-navbar-list { display: block; }
+
+    .shop-navbar { background: #fff; }
+}
+
+@media (max-width: 420px) {
+  .shop-meal {
+    width: calc(100% * (1/2) - 10px);
+    margin: auto;
+  }
+
+  .shop-meals-wrapper { padding: 30px 15px; }
+
+  .add-btn {
+    padding: 10px;
+    margin: 10px;
+  }
 }

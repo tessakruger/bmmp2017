@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-<?php the_content(); ?>	
+<?php the_content(); ?>
 
 <div id="content">
  	<div class="slider-wrapper">
@@ -16,7 +16,7 @@
 		<div class="slider-btn"><a href="<?php echo site_url(); ?>/store">CHECK OUT MENU</a></div>
 	</div>
 		<!-- Home: How to Order -->
-        <section class="order-section">
+        <section id="how-to-order" class="order-section">
         	<div class="order-container">
         		<div class="order-title-wrapper">
               		<h4 class="order-title">How to Order</h4>
@@ -27,7 +27,7 @@
 
               		<div class="order-step">
             			<div class="order-line one"></div>
-    	        		<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png"></div>
+    	        		<div class="order-icon"><a href="http://blackmarketmealprep.store/store/"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png"></a></div>
     	        		<div class="order-mobile-wrapper">
 	                		<div class="order-step-title">
 	                			Order Now
@@ -39,7 +39,7 @@
                		</div>
     	            <div class="order-step">
     	            	<div class="order-line two"></div>
-    	              	<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png"></div>
+    	              	<div class="order-icon"><a href="http://blackmarketmealprep.store/store/"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png"></a></div>
     	              	<div class="order-mobile-wrapper">
 	    	              	<div class="order-step-title">
 	    	                	Customize Meal
@@ -49,20 +49,26 @@
 	    	              	</div>
 	    	            </div>
     	            </div>
-    	            <div class="order-step" id="order-popup">
+    	            <div class="order-step">
     	            	<div class="order-line three"></div>
-      			        <div class="order-icon"><img id="order-step-delivery" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/delivery-icon.png"></div>
-      			        <div class="order-mobile-wrapper">
-	      			        <div class="order-step-title">
-	      			        	Pickup or Delivery?
-	      			        </div>
-	      	            	<div class="order-step-description">
-	      	              		Save money by picking up your meals from designated pick-up locations, or enter your zip code in your cart to find out if you are eligible for free local delivery or a standard flat rate. Our pick up time is from 6pm to 9pm and our Delivery time is from 4pm - 9pm.
-	      	            	</div>
+	      			        <div class="order-icon" id="order-popup"><img id="order-step-delivery" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/delivery-icon.png"></div>
+	      			        <div class="order-mobile-wrapper">
+		      			        <div class="order-step-title">
+		      			        	Pickup or Delivery?
+		      			        </div>
+		      	            	<div class="order-step-description">
+		      	              		Save money by picking up your meals from designated pick-up locations, or enter your zip code in your cart to find out if you are eligible for free local delivery or a standard flat rate. Our pick up time is from 6pm to 9pm and our Delivery time is from 4pm - 9pm.
+		      	            	</div>
+	      	            	<div id="order-btn">View Delivery Schedule & Pick Up Options</div>
 	      	            </div>
+
+	      	           <div id="order-delivery-text">
+	      	           	<p>Place your order online before 11:59pm Thursday to be delivered or picked-up on Sunday.<br />
+	      	           	Meals will be delivered to your doorstep.</p>
+	      	           </div>
     	  	        </div>
     	            <div class="order-step">
-    	            	<div class="order-icon"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/checkout-enjoy-icon.png"></div>
+    	            	<div class="order-icon"><a href="http://blackmarketmealprep.store/store/"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/checkout-enjoy-icon.png"></a></div>
     	            	<div class="order-mobile-wrapper">
 	    	            	<div class="order-step-title">
 	    	              		Checkout & Enjoy
@@ -73,14 +79,25 @@
 	    	            </div>
     	          	</div>
 
-    	          	<div id="order-delivery-text">
-    	          		<p>You are now ordering for Sunday, July 2, 2017.<br />
-    	          		Pick-up (6PM-9PM)/Delivery (4PM-9PM).<br />
-    	          		Place your order before Thursday 11:59pm.<br />
-    	          		Questions? Call/text (714)767-4145</p>
-    	          	</div>
-
            		</div><!--order-steps-wrapper END -->
+
+           		<div class="modal-window">
+	          		<div class="modal-container">
+    	          		<div class="delivery-schedule">
+    	          			<h4 class="important">DELIVERY SCHEDULE</h4>
+    	          			<p>SUNDAY: 4PM TO 10PM Door Drop off (HAVE COOLER OR <strong>BLACK MARKET INSULATED BAG</strong> READILY AVAILABLE)</p>
+    	          		</div>
+    	          		<div class="pickup-options">
+    	          			<h4 class="important">PICK-UP OPTIONS</h4>
+    	          			<p>SUNDAY: HANA KITCHEN (HUNTINGTON BEACH) 11:00am-2:00pm (No Exceptions)<br />
+    	          				MONDAY: NUTRISHOP ORANGE (CITY OF ORANGE) 8:00am-7:00pm (No Exceptions)<br />
+    	          				Reign Training Facility Members:<br />
+    	          				MONDAY PICK-UP: REIGN TRAINING FACILITY (CORONA, CA) 12:00PM-CLOSE</p>
+    	          				<p class="important">Please note any special delivery instructions, i.e. gate code, pets, etc.</p>
+    	          		</div>
+    	          	</div>
+    	          	<div id="close-btn"><i class="fa fa-times fa-3x" aria-hidden="true"></i></div>
+	          	</div>
 
           	</div><!--order-container END -->
         </section>
@@ -171,7 +188,11 @@
 	</section>
 	<!-- end of Home: Meet Our Team -->
 	<!-- instagram feed -->	
-	<section>
+	<section class="insta">
+		<div class="insta-header">
+			<h2>#blackmarketmealprep</h2>
+			<p>share your moments on instagram and follow us @blackmarketmealprep</p>
+		</div>
 		<div class="insta-container">
 			<div>
 			<?php echo do_shortcode('[instagram-feed]'); ?>
