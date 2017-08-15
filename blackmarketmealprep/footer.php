@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Meet Our Team</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Arimo|Bitter:700" rel="stylesheet">
+<?php
+/**
+ * The template for displaying the footer*/
+?>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
 	<!-- start of Footer -->
 	<footer class="footer-container">
 
@@ -72,5 +67,4 @@
 	</footer>
 	<!-- end of Footer  -->
 
-</body>
-</html>
+<?php wp_footer(); ?>
