@@ -12,7 +12,7 @@
 
 		<div class="footer-wrapper">
 			<div class="footer-logo footer-item">
-				<a href="#"><img class="footer-bmmp-logo" src="assets/images/logos-bmmp/bmmp-logo-white.png"></a>
+				<a href="#"><img class="footer-bmmp-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logos-bmmp/bmmp-logo-white.png"></a>
 			</div>
 			
 			<div class="footer-contact footer-item">
@@ -37,8 +37,8 @@
 				<div class="footer-social-container">
 					<p>Connect With Us</p>
 					<ul class="footer-social-links">
-						<a href="https://www.facebook.com/blackmarketmealprep/" target="_blank"><li class="footer-social-icon" id="footer-facebook"><img src="assets/images/icons-social/facebook-icon-white.png"></li></a>
-						<a href="https://www.instagram.com/blackmarketmealprep/" target="_blank"><li class="footer-social-icon" id="footer-instagram"><img src="assets/images/icons-social/instagram-icon-white.png"></li></a>
+						<a href="https://www.facebook.com/blackmarketmealprep/" target="_blank"><li class="footer-social-icon" id="footer-facebook"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons-social/facebook-icon-white.png"></li></a>
+						<a href="https://www.instagram.com/blackmarketmealprep/" target="_blank"><li class="footer-social-icon" id="footer-instagram"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons-social/instagram-icon-white.png"></li></a>
 					</ul>
 				</div>
 			</div>
@@ -46,9 +46,9 @@
 			<div class="footer-affiliate-container footer-item">
 				<p>Affiliates</p>
 				<ul class="footer-affiliates">
-					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-cfw" src="assets/images/logos-affiliates/cfw-logo-white.png"></li>
-					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-hog" src="assets/images/logos-affiliates/houseofgyms-logo-white.png"></li>
-					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-nts" src="assets/images/logos-affiliates/nutrishop-logo-white.png"></li>
+					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-cfw" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/cfw-logo-white.png"></li>
+					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-hog" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/houseofgyms-logo-white.png"></li>
+					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-nts" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/nutrishop-logo-white.png"></li>
 				</ul>
 			</div>
 		</div>
