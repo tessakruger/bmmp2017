@@ -7,7 +7,7 @@
 	<footer class="footer-container">
 
 		<div class="footer-map">
-			<img src="assets/images/map/map-orangecounty-1926x334.png">
+			<img src="<?php bloginfo('template_url'); ?>/assets/images/map/map-orangecounty-1926x334.png">
 		</div>
 
 		<div class="footer-wrapper">
