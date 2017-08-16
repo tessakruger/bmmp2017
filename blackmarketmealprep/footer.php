@@ -55,12 +55,14 @@
 
 		<div>
 			<div class="footer-copyright-container">
-				<p class="copyright-info">Copyright © 2017 Black Market Meal Prep. All rights reserved.</p>
-				<ul class="footer-copyright-links">
-					<a href="terms.php"><li class="secondary-links footer-terms">Terms</li></a>
-					<a href="faq.php"><li class="secondary-links footer-faq">FAQ</li></a>
-					<a href="feedback.php"><li class="secondary-links footer-feedback">Feedback</li></a>
-				</ul>
+				<div class="footer-copyright-wrapper">
+					<p class="copyright-info footer-copyright-item">Copyright © 2017 Black Market Meal Prep. All rights reserved.</p>
+					<ul class="footer-copyright-links footer-copyright-item">
+						<a href="terms.php"><li class="secondary-links footer-terms">Terms</li></a>
+						<a href="faq.php"><li class="secondary-links footer-faq">FAQ</li></a>
+						<a href="feedback.php"><li class="secondary-links footer-feedback">Feedback</li></a>
+					</ul>
+				</div>
 			</div>
 		</div>
 
