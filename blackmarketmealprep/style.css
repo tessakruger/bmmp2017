@@ -727,15 +727,11 @@ ul.team-info:hover {
 ## Footer
 --------------------------------------------------------------*/
 
+/** REGULAR STYLES **/
+
 .footer-container {
     background-color: #20202f;
 }
-
-.footer-wrapper {
-	/*border: 1px solid goldenrod;*/
-}
-
-/** REGULAR STYLES **/
 
 .footer-map img {
 	width: 100%;
@@ -748,27 +744,25 @@ ul.team-info:hover {
 .footer-social-container p,
 .footer-affiliate-container p,
 .footer-copyright-container p
-li.footer-categories-item  {
+li.footer-categories-item,
+#footer-copyright ul li,
+.copyright-info  {
 	font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;	
 	font-style: normal;
 	color: #fff;
 }
 
 img.footer-bmmp-logo {
-    width: 80%;
-    height: 100%;
-    padding-left: 35px;
-    padding-bottom: 130px;
-    margin: auto;
+    width: 100%;
 }
 
 .footer-contact-form {
-    background-color: #fff;
+/*    background-color: #fff;
     width: 25%;
     height: 350px;
     padding-top: 50px;
     margin-top: -284px;
-    position: absolute;
+    position: absolute;*/
 }
 
 .footer-contact p {
@@ -809,34 +803,23 @@ img.footer-bmmp-logo {
     height: 33px;
     border-style: none;
     position: relative;
-    margin-left: 135px;
+    margin-left: 50px;
 }
 
-ul.footer-categories {
-    margin: 0px;
-    padding: 0px;
-}
-
+ul.footer-categories,
 ul.footer-social-links {
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 
 .footer-social-icon img {
-	width: 14%;
-	height: 14%;
+	width: 25%;
+    margin-top: -25px;
 }
 
 li.footer-social-icon {
     display: inline;
-}
-
-#footer-facebook img {
-	margin-left: -8px;
-}
-
-#footer-instagram img {
-	margin-left: -8px;
+    margin-right: -10px;
 }
 
 .footer-categories-container p,
@@ -861,7 +844,6 @@ li.secondary-links {
 .footer-categories a,
 .footer-copyright-links a {
 	text-decoration: none;
-	padding-right: 10px;
 }
 
 ul.footer-affiliates {
@@ -869,44 +851,29 @@ ul.footer-affiliates {
     padding: 0px;
 }
 
-#footer-affiliate-logo-cfw {
-	width: 25%;
-	height: 25%;
-	padding-bottom: 10px;
-}
-
-#footer-affiliate-logo-hog {
-	width: 25%;
-	height: 25%;
-	padding-bottom: 10px;
-}
-
+#footer-affiliate-logo-cfw,
+#footer-affiliate-logo-hog,
 #footer-affiliate-logo-nts {
-	width: 25%;
-	height: 25%;
+	width: 40%;
+	padding-bottom: 10px;
 }
 
 .copyright-info {
     font-size: 12px;
-    padding: 20px 0px 20px 35px;
-	color: #fff;
 }
 
 #footer-copyright ul li {
-    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
-    font-style: normal;
     font-size: 11px;
-    padding: 20px 0px 20px 16px;
     list-style: none;
-    display: inline-block;
 }
-
-/** HOVER ACTIONS **/
 
 .secondary-links {
 	color: #f0b56f;
 	font-size: 12px;
 }
+
+/** HOVER ACTIONS **/
+
 
 .footer-categories-item:hover,
 .secondary-links:hover {
@@ -922,43 +889,53 @@ ul.footer-affiliates {
 .footer-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	position: relative;
 }
 
 .footer-wrapper {
 	display: flex;
-	justify-content: flex-end;
 	margin: auto;
+    padding: 0px 35px;
+    width: calc(100% - 70px);
+	justify-content: space-between;
 }
 
 .footer-item {
 	flex: 1;
 	margin: auto;
-	/*border: 1px solid goldenrod;*/
+	min-height: 300px;
+	padding: 30px 0px;
 }
 
 .footer-logo {
-	flex: 1;
+	flex: 2;
 	margin: auto;
+    padding-right: 35px;
+	/*border: 1px solid goldenrod;*/
 }
 
 .footer-contact {
-	flex: 1;
+	flex: 1.8;
 	margin: auto;
+	border: 1px solid yellow;	
+	background-color: #fff;
+    margin-top: -160px;
 }
 
 .footer-contact-form {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
+
 }
 
 .footer-categories-social {
     flex: 1;
     margin: auto;
-    padding-left: 35px;
     display: flex;
     flex-direction: column;
+    padding-left: 35px; 
+	/*border: 1px solid blue;   */
 }
 
 .footer-affiliate-container {
@@ -966,33 +943,56 @@ ul.footer-affiliates {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
+    padding-left: 35px;	
+	/*border: 1px solid red;*/
 }
 
 .footer-copyright-container {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
+}
+
+.footer-copyright-wrapper {
+	flex: 1;
+	display: flex;
+	margin: auto;
+    padding: 0px 35px;
+    width: calc(100% - 70px);
+}
+
+.footer-copyright-item {
+	min-height: 30px;
+	padding: 0 12px;
 }
 
 .copyright-info {
-	flex: 1;
+	flex: 0.7;
 	margin: auto;
+	/*border: 2px solid green;*/
 }
 
 .footer-copyright-links {
-    flex: 3;
+    flex: 2;
     margin: auto;
     display: flex;
     padding: 0;
+    /*border: 2px solid white;*/
+}
+
+.secondary-links {
+	flex: 1;
 }
 
 .footer-terms {
 	flex: 1;
 	margin: auto;
+	padding-right: 10px;
 }
 
 .footer-faq {
 	flex: 1;
 	margin: auto;
+	padding-right: 10px;
 }
 
 .footer-feedback {
