@@ -3,59 +3,70 @@
  * The template for displaying the footer*/
 ?>
 
-		<!-- start of Footer -->
-		<footer>
-			<div id="footer-map">
-				<img class="footer-map-image" src="<?php bloginfo('template_url'); ?>/assets/images/map/map-orangecounty-1926x334.png">
+	<!-- start of Footer -->
+	<footer class="footer-container">
+
+		<div class="footer-map">
+			<img src="<?php bloginfo('template_url'); ?>/assets/images/map/map-orangecounty-1926x334.png">
+		</div>
+
+		<div class="footer-wrapper">
+			<div class="footer-logo footer-item">
+				<a href="#"><img class="footer-bmmp-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logos-bmmp/bmmp-logo-white.png"></a>
 			</div>
-			<div id="footer-container">
-				<div id="footer-logo" class="footer-div">
-					<a href="#"><img class="footer-bmmp-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logos-bmmp/bmmp-logo-white.png"></a>
-				</div>
-				<div id="footer-contact" class="footer-div">
-					<h5>Get In Touch</h5>
-					<form id="footer-form">
-						<input type="text" id="footer-name" name="name" placeholder="Name">
-						<input type="text" id="footer-email" name="email" placeholder="Email">
-						<textarea type="text" id="footer-message" name="message" placeholder="Message"></textarea>
-						<button type="button" id="footer-button-send" form="footer-contact-form" value="Send Message">Send Message</button>
-					</form>
-				</div>
-				<div id="footer-other-social-links" class="footer-div">
-					<div id="footer-other-categories">
-						<p>Other Categories</p>
-						<ul id="footer-other-categories-links">
-							<a href="gift-cards.php"><li class="footer-categories">Gift Cards</li></a>
-							<a href="nutrition-facts.php"><li class="footer-categories">Nutritional Facts</li></a>
-							<a href="subscription.php"><li class="footer-categories">Email Subscription</li></a>
-						</ul>
-					</div>
-					<div id="footer-social-links">
-						<p>Connect With Us</p>
-						<ul id="footer-social">
-							<a href="https://www.facebook.com/blackmarketmealprep/" target="_blank"><li><img class="footer-social-icons" src="<?php bloginfo('template_url'); ?>/assets/images/icons-social/facebook-icon-white.png"></li></a>
-							<a href="https://www.instagram.com/blackmarketmealprep/" target="_blank"><li><img class="footer-social-icons" src="<?php bloginfo('template_url'); ?>/assets/images/icons-social/instagram-icon-white.png"></li></a>
-						</ul>
-					</div>
-				</div>
-				<div id="footer-affiliate-links" class="footer-div">
-					<p>Affiliates</p>
-					<ul id="footer-affiliates">
-						<li><img id="footer-affiliate-logo-cfw" class="footer-affiliate-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/cfw-logo-white.png"></li>
-						<li><img id="footer-affiliate-logo-hog" class="footer-affiliate-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/houseofgyms-logo-white.png"></li>
-						<li><img id="footer-affiliate-logo-nts" class="footer-affiliate-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/nutrishop-logo-white.png"></li>
+			
+			<div class="footer-contact footer-item">
+				<form class="footer-contact-form">
+					<p>Get In Touch</p>
+					<input type="text" id="footer-name" name="name" placeholder="Name">
+					<input type="text" id="footer-email" name="email" placeholder="Email">
+					<textarea type="text" id="footer-message" name="message" placeholder="Message"></textarea>
+					<button type="button" id="footer-button-send" form="footer-contact-form" value="Send Message">Send Message</button>
+				</form>
+			</div>
+
+			<div class="footer-categories-social footer-item">
+				<div class="footer-categories-container">
+					<p>Other Categories</p>
+					<ul class="footer-categories">
+						<a href="gift-cards.php"><li class="footer-categories-item">Gift Cards</li></a>
+						<a href="nutrition-facts.php"><li class="footer-categories-item">Nutritional Facts</li></a>
+						<a href="subscription.php"><li class="footer-categories-item">Email Subscription</li></a>
 					</ul>
 				</div>
-				<div id="footer-copyright">
-					<ul id="footer-copyright-links">
-						<li class="copyright">Copyright © 2017 Black Market Meal Prep. All rights reserved.</li>
-						<a href="terms.php"><li class="secondary-links">Terms</li></a>
-						<a href="faq.php"><li class="secondary-links">FAQ</li></a>
-						<a href="feedback.php"><li class="secondary-links">Feedback</li></a>
+				<div class="footer-social-container">
+					<p>Connect With Us</p>
+					<ul class="footer-social-links">
+						<a href="https://www.facebook.com/blackmarketmealprep/" target="_blank"><li class="footer-social-icon" id="footer-facebook"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons-social/facebook-icon-white.png"></li></a>
+						<a href="https://www.instagram.com/blackmarketmealprep/" target="_blank"><li class="footer-social-icon" id="footer-instagram"><img src="<?php bloginfo('template_url'); ?>/assets/images/icons-social/instagram-icon-white.png"></li></a>
 					</ul>
 				</div>
 			</div>
-		</footer>
-		<!-- end of Footer  -->
+
+			<div class="footer-affiliate-container footer-item">
+				<p>Affiliates</p>
+				<ul class="footer-affiliates">
+					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-cfw" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/cfw-logo-white.png"></li>
+					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-hog" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/houseofgyms-logo-white.png"></li>
+					<li class="footer-affiliate-logo"><img id="footer-affiliate-logo-nts" src="<?php bloginfo('template_url'); ?>/assets/images/logos-affiliates/nutrishop-logo-white.png"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<div class="footer-copyright-container">
+				<div class="footer-copyright-wrapper">
+					<p class="copyright-info footer-copyright-item">Copyright © 2017 Black Market Meal Prep. All rights reserved.</p>
+					<ul class="footer-copyright-links footer-copyright-item">
+						<a href="terms.php"><li class="secondary-links footer-terms">Terms</li></a>
+						<a href="faq.php"><li class="secondary-links footer-faq">FAQ</li></a>
+						<a href="feedback.php"><li class="secondary-links footer-feedback">Feedback</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- end of Footer  -->
 
 <?php wp_footer(); ?>
