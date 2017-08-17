@@ -721,17 +721,17 @@ button {
 --------------------------------------------------------------*/
 
 .team-container {
-    width: 100%;
-    height: 582px;
-    background-color: #f4f2ed;
-    margin-top: 726px;
+	width: 100%;
+	height: 582px;
+	background-color: #f4f2ed;
+ 	margin-top: 726px;
 }
 
 .team-left-panel {
-    width: 58%;
-    height: 495px;
+	width: 58%;
+	height: 495px;
     margin-top: 85px;
-    float: left;
+	float: left;
 }
 
 .team-right-panel {
@@ -740,22 +740,22 @@ button {
     float: right;
     margin-right: 10px;
     margin-top: 140px;
-    /*background-color: orange;*/
+	/*background-color: orange;*/
 }
 
 .team {
-    display: inline;
-    width: 38%;
-    height: 300px;
-    margin: 0 15px;
+	display: inline;
+	width: 38%;
+	height: 300px;
+	margin: 0 15px;
 }
 
 #team-bryan {
-    float: left;
+	float: left;
 }
 
 #team-margarita {
-    float: left;
+	float: left;
 }
 
 #team-bryan,
@@ -776,43 +776,43 @@ button {
 }
 
 .team-history {
-    font-family: 'Arimo', sans-serif;
-    font-size: 20px;
-    color: #383848;
-    line-height: 1.4;
-    margin-left: 70px;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	color: #383848;
+	line-height: 1.4;
+	margin-left: 70px;
 }
 
 .team-img {
-    width: 220px;
-    height: 220px;
-    background-color: #151521;
+	width: 220px;
+	height: 220px;
+	background-color: #151521;
 }
 
 .team-author {
-    background-color: #151521;
-    width: 220px;
-    height: 220px;
+	background-color: #151521;
+	width: 220px;
+	height: 220px;
 }
 
 .team-info {
-    background-color: #383848;
-    height: 80px;
-    list-style: none;
+	background-color: #383848;
+	height: 80px;
+	list-style: none;
 }
 
 .team-name {
-    font-family: 'Arimo', sans-serif;
-    font-size: 20px;
-    color: #f0b56f;
+	font-family: 'Arimo', sans-serif;
+	font-size: 20px;
+	color: #f0b56f;
     padding-top: 10px;
     margin-left: 15px;
 }
 
 .team-position {
-    font-family: 'Arimo', sans-serif;
-    font-size: 16px;
-    color: #f6f0f2;
+	font-family: 'Arimo', sans-serif;
+	font-size: 16px;
+	color: #f6f0f2;
     padding-top: 10px;
     margin-left: 15px;
 }
@@ -820,25 +820,25 @@ button {
 /* Home: Meet Our Team Hover */
 
 .team-name-link:link {
-    text-decoration: none;
-    color: #f0b372;
+	text-decoration: none;
+	color: #f0b372;
 }
 
 .team-pos-link:link {
-    text-decoration: none;
-    color: #f6f0f2;
+	text-decoration: none;
+	color: #f6f0f2;
 }
 
 .team-name-link:hover {
-    color: #f6f0f2;
+	color: #f6f0f2;
 }
 
 .team-pos-link:hover {
-    color: #171722;
+	color: #171722;
 }
 
 .team-img:hover {
-    opacity: 0.7;
+	opacity: 0.7;
 }
 
 
@@ -928,15 +928,6 @@ img.footer-bmmp-logo {
     width: 100%;
 }
 
-.footer-contact-form {
-/*    background-color: #fff;
-    width: 25%;
-    height: 350px;
-    padding-top: 50px;
-    margin-top: -284px;
-    position: absolute;*/
-}
-
 .footer-contact p {
     font-size: 20px;
     color: #383848;
@@ -951,7 +942,7 @@ img.footer-bmmp-logo {
 	font-size: 15px;
 	color: #636375;
 	background-color: #fff;
-	border-color: 1px solid #e5e5ee;
+	/*border-color: 1px solid #e5e5ee;*/
 	line-height: normal;
 	margin: 0px 50px 20px 50px;
 	padding: 0px 5px;
@@ -1089,9 +1080,9 @@ ul.footer-affiliates {
 .footer-contact {
 	flex: 1.8;
 	margin: auto;
-	border: 1px solid yellow;	
 	background-color: #fff;
     margin-top: -160px;
+	/*border: 1px solid yellow;	*/
 }
 
 .footer-contact-form {
@@ -1320,63 +1311,94 @@ select#shop-navbar-list {
     transform: rotate(45deg);
 }
 
-nav select#shop-navbar-list {display: none; }
+/* woocommerce shop-menu styling */
+.shop-meal-item {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: calc(100% * (1/4) - 10px);
+    text-align: center;
+    list-style: none;
+    font-family: Arimo, sans-serif;
+}
 
+.product-thumbnail > img {
+    border-radius: 18px;
+}
+
+.meal-price > h2,
+.meal-price > a {
+    color: #f0b46e;
+    font-size: 1em;
+    text-decoration: none !important;
+}
+
+nav select#shop-navbar-list {display: none; }
+/*My Account Page*/
+.inner-title {
+    color: #EEEEEE;
+    text-align: center;
+    padding-top: 2vw;
+    font-family: 'Arimo', 'Myriad Pro', Arial, Sans-Serif;
+    height: 7vw;
+    background-color: #171722;
+    border-top: 1px white solid;
+}
 /*MEDIA QUERIES*/
 
 
 /*ALL TABLET MEDIA QUERIES*/
 
 @media (min-width: 1100px) and (max-width: 1300px) {
-    .team-left-panel {
-        width: 50%;
-    }
-    .team-right-panel {
-        width: 45%;
-    }
-    .team-history {
-        font-size: 15px;
-    }
-    #team-margarita {
-        float: left;
-    }
+	.team-left-panel {
+	    width: 50%;
+	}
+	.team-right-panel {
+	    width: 45%;
+	}
+	.team-history {
+	    font-size: 15px;
+	}
+	#team-margarita {
+	    float: left;
+	}
     .tag-line{
         margin-left: 37%;
-        top: 367px;
+        top: 35vw;
     }
     .slider-btn{
     margin-left: 40%;
-    top: 394px;
+    top: 38vw;
     }
 }
 
-@media (min-width: 801px) and (max-width: 1099px) {
-    .team-left-panel {
-        width: 100%;
-    }
-    .team-right-panel {
-        display: none;
-    }
-    .team-title {
-        font-size: 26px;
-    }
-    .team-history {
-        font-size: 18px;
-        width: 84%;
-    }
+@media (min-width: 851px) and (max-width: 1099px) {
+	.team-left-panel {
+		width: 100%;
+	}
+	.team-right-panel {
+	    display: none;
+	}
+	.team-title {
+    	font-size: 26px;
+	}
+	.team-history {
+	    font-size: 18px;
+	    width: 84%;
+	}
 
     .tag-line{
         margin-left: 35%;
-        top: 325px;
+        top: 35vw;
     }
 
     .slider-btn{
         margin-left: 40%;
-        top: 361px;
+        top: 38vw;
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:850px) {
     /*header*/
     .header{
       padding-left: 0px;
@@ -1483,22 +1505,22 @@ nav select#shop-navbar-list {display: none; }
     .mobile-nav{
         display: none;
     }
-    /****** Team ******/
-    .team-left-panel {
-        width: 100%;
-    }
-    .team-right-panel {
-        width: 81%;
-        height: 300px;
-        margin: 0 auto;
-        left: -11%;
-        top: -75%;
-        position: relative; 
-        font-size: 30px;
-    }
-    .team-history {
-        display: none;
-    }
+	/****** Team ******/
+	.team-left-panel {
+		width: 100%;
+	}
+	.team-right-panel {
+	    width: 81%;
+	    height: 300px;
+	    margin: 0 auto;
+		left: -11%;
+    	top: -75%;
+    	position: relative; 
+		font-size: 30px;
+	}
+	.team-history {
+	    display: none;
+	}
     
     .tag-line{
     margin-left: 32%;
@@ -1515,36 +1537,36 @@ nav select#shop-navbar-list {display: none; }
 /*ALL MOBILE MEDIA QUERIES*/
 
 @media (max-width: 600px) {
-    .team-right-panel {
-        width: 86%;
-        left: -5%;
-        top: -75%;
-    }
-    .team-title {
-        margin: 0 38px;
-    }   
-    #team-bryan, 
-    #team-margarita {
-        width: 150px;
-    }  
-    .team-author {
-        background-color: #151521;
-        width: 150px;
-        height: 150px;
-    }
-    .team-img {
-        width: 150px;
-        height: 150px; 
-    }
-    .team-info {
-        height: 62px;
-    }   
-    .team-name {
-        font-size: 14px;
-    }  
-    .team-position {
-        font-size: 12px;
-    }      
+	.team-right-panel {
+	    width: 86%;
+    	left: -5%;
+    	top: -75%;
+	}
+	.team-title {
+	    margin: 0 38px;
+	}	
+	#team-bryan, 
+	#team-margarita {
+	    width: 150px;
+	}  
+	.team-author {
+	    background-color: #151521;
+	    width: 150px;
+	    height: 150px;
+	}
+	.team-img {
+	    width: 150px;
+	    height: 150px; 
+	}
+	.team-info {
+	    height: 62px;
+	}	
+	.team-name {
+	    font-size: 14px;
+	}  
+	.team-position {
+	    font-size: 12px;
+	}      
 }
 
 @media (max-width: 450px) {

@@ -84,14 +84,14 @@
 	<div class="nav">
 	  <ul>
 	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/logo.png" height="45px" alt="logo"/>&nbsp;&nbsp;</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;Home</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;How to Order</li>
+	  	<li href="<?php echo site_url(); ?>"><div class="dot">&#8226;</div>&nbsp;Home</li>
+	  	<li href="<?php echo site_url(); ?>/#how-to-order"><div class="dot">&#8226;</div>&nbsp;How to Order</li>
 	  	<li><div class="dot">&#8226;</div>&nbsp;Mission</li>
 	  	<li><div class="dot">&#8226;</div>&nbsp;Menu</li>
 	  	<li><div class="dot">&#8226;</div>&nbsp;What People Say</li>
 	  <ul>
 	  <ul class="social">
-	    <li><a target="_blank" href="https://www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png"  alt="facebook"/></a></li>
+	    <li><a target="_blank" href="www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png"  alt="facebook"/></a></li>
 	    <li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
 	  </ul>
 	</div>
