@@ -30,18 +30,19 @@
 </head>
 <body>
   <div class="header">
+  	<div class="promo-orders-wrapper">
     <ul class="promo">
 	    <li>You are now ordering for Sunday July 02, 2017.  Pick-Up (6pm-9pm)/Delivery(4pm-9pm)</li><!-- this needs to be the actual date? -->
 	  </ul>
 	  <ul class="orders">
 	  	<li>Place your order before Thursday 11:59PM. Questions? Call/Text (714)767-4145</li><!-- this needs to be the actual date? -->
 	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/order_nav_icon.png" alt="order"/></li>
-	  	<li>&nbsp;Order Now&nbsp;</li>
+	  	<li><a href="<?php echo site_url(); ?>/store/">&nbsp;Order Now&nbsp;</a></li>
 	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/checkout_nav_icon.png" alt="checkout"/></li>
-	  	<li>&nbsp;Checkout&nbsp;</li>
+	  	<li><a href="<?php echo site_url(); ?>/checkout/">&nbsp;Checkout&nbsp;</a></li>
 	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/cart_nav_icon.png" alt="cart" /></li>
-	  	<li>&nbsp;5 items - $20.85&nbsp;</li>
-	  	<li><button>login</button></li>
+	  	<li><a href="<?php echo site_url(); ?>/cart/">&nbsp;5 items - $20.85&nbsp;</a></li>
+	  	<li><a href="<?php echo site_url(); ?>/my-account/"><button>login</button></a></li>
 	  </ul>
 	   <div class="tablet-orders">
 	   	<ul class="order-text">
@@ -50,17 +51,18 @@
 	  	<hr>
 	  	  <ul class="order-nav">
 	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/order_nav_icon.png" alt="order"/></li>
-	  		<li>&nbsp;Order Now&nbsp;&nbsp;</li>
+	  		<li><a href="<?php echo site_url(); ?>/store/">&nbsp;Order Now&nbsp;&nbsp;</a></li>
 	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/checkout_nav_icon.png" alt="checkout"/></li>
-	  		<li>&nbsp;Checkout&nbsp;&nbsp;</li>
+	  		<li><a href="<?php echo site_url(); ?>/checkout/">&nbsp;Checkout&nbsp;&nbsp;</a></li>
 	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/cart_nav_icon.png" alt="cart" /></li>
-	  		<li>&nbsp;5 items - $20.85&nbsp;&nbsp;</li>
+	  		<li><a href="<?php echo site_url(); ?>/cart/">&nbsp;5 items - $20.85&nbsp;&nbsp;</a></li>
 	  	  </ul>
 	  	  <ul class="tablet-buttons">
-	  	  	<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" href="https://www.facebook.com/blackmarketmealprep/" alt="facebook"/> </li>
-	    	<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" href="https://www.instagram.com/blackmarketmealprep/" alt="instagram"/> </li>
-	  		<li><button>login</button></li>
-	  	  </ul>	
+	  	  	<li><a target="_blank" href="https://www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" alt="facebook"/></a></li>
+	    	<li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
+	  		<li><a href="<?php echo site_url(); ?>/my-account/"><button>login</button></a></li>
+	  	  </ul>
+	  	</div>	
 	  </div>
 	  <div class="mobile-orders">
 	    <ul class="mobile-promo">
@@ -82,28 +84,38 @@
 	<div class="nav">
 	  <ul>
 	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/logo.png" height="45px" alt="logo"/>&nbsp;&nbsp;</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;Home</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;How to Order</li>
+	  	<li href="<?php echo site_url(); ?>"><div class="dot">&#8226;</div>&nbsp;Home</li>
+	  	<li href="<?php echo site_url(); ?>/#how-to-order"><div class="dot">&#8226;</div>&nbsp;How to Order</li>
 	  	<li><div class="dot">&#8226;</div>&nbsp;Mission</li>
 	  	<li><div class="dot">&#8226;</div>&nbsp;Menu</li>
 	  	<li><div class="dot">&#8226;</div>&nbsp;What People Say</li>
 	  <ul>
 	  <ul class="social">
-	    <li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" href="https://www.facebook.com/blackmarketmealprep/" alt="facebook"/> </li>
-	    <li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" href="https://www.instagram.com/blackmarketmealprep/" alt="instagram"/> </li>
+	    <li><a target="_blank" href="www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png"  alt="facebook"/></a></li>
+	    <li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
 	  </ul>
 	</div>
 	<div class="mobile-nav">
 	  	<ul class="mobile-social">
 	  		<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/logo.png" height="45px" alt="logo"/>&nbsp;&nbsp;</li>
-	  		<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" href="https://www.facebook.com/blackmarketmealprep/" alt="facebook"/> </li>
-	    	<li> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" href="https://www.instagram.com/blackmarketmealprep/" alt="instagram"/> </li>
+	  		<li><a target="_blank" href="https://www.facebook.com/blackmarketmealprep/"> <img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png" alt="facebook"/></a></li>
+	    	<li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
+	    	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/hamburger_menu.png" alt="menu" class="hamburger-btn"/></li>
+	    	<div class="mobile-menu">
+	    		<ul>
+	    			<li>Home</li>
+	    			<li>How To Order</li>
+	    			<li>Mission</li>
+	    			<li>Menu</li>
+	    			<li>What People Say</li>
+	    		</ul>
+	    	</div>
 	  	</ul>
 	  	<ul class="mobile-info">
-	  		<li>Order Now</li>
-	  		<li>Checkout</li>
-	  		<li>Cart</li>
-	  		<li><button>login</button></li>
+	  		<li><a href="<?php echo site_url(); ?>/orders/">Order Now</a></li>
+	  		<li><a href="<?php echo site_url(); ?>/checkout/">Checkout</a></li>
+	  		<li><a href="<?php echo site_url(); ?>/cart/">Cart</a></li>
+	  		<li><button><a href="<?php echo site_url(); ?>/my-account/">login</a></button></li>
 	  	</ul>
 	</div>
 </body>

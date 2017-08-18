@@ -49,8 +49,68 @@ function disable_emojicons_tinymce($plugins)
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
+
+// add jquery for mobile nav menu
+add_action( 'wp_enqueue_scripts', 'add_my_script' );
+function add_my_script() {
+    wp_enqueue_script(
+        'hamburger-menu', // name your script 
+        get_template_directory_uri() . '/js/hamburger-menu.js', // location of js file
+        array('jquery') // this array lists the scripts upon which your script depends
+    );
+
+// add jquery for lines between how to order steps
+    wp_enqueue_script(
+        'order-step-lines',
+        get_template_directory_uri() . '/js/order-step-lines.js',
+        array('jquery')
+    );
+
+// add jquery for how to order: delivery pop up
+    wp_enqueue_script(
+      'order-delivery-popup', 
+      get_template_directory_uri() . '/js/order-delivery-popup.js',
+      array('jquery')
+    );
+
+// add jquery for carousel home: what people are saying
+    wp_enqueue_script(
+      'carousel', 
+      get_template_directory_uri() . '/js/carousel.js',
+      array('jquery')
+    );
+}
+
+// add js for display menu meal items
+    wp_enqueue_script(
+      'view-meal-menu', 
+      get_template_directory_uri() . '/js/view-meal-menu.js',
+      array('jquery')
+    );
+
+// add js for 'add to cart' overlay on meal menu items
+    wp_enqueue_script(
+      'overlay', 
+      get_template_directory_uri() . '/js/overlay.js',
+      array('jquery')
+    );
+
+// add js to pop-up delivery and pick up information
+    wp_enqueue_script(
+      'delivery-popup', 
+      get_template_directory_uri() . '/js/delivery-popup.js',
+      array('jquery')
+    );
+
+//woocommerce
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+add_theme_support( 'woocommerce' ); }
+//woocommerce add to cart button display on shop page
+add_action( ‘woocommerce_after_shop_loop_item’, ‘woocommerce_template_loop_add_to_cart’, 10 );
 /** FOR FUTURE USE
 * Use Post Category to load template
+
 add_filter('single_template', create_function(
 '$the_template',
 'foreach( (array) get_the_category() as $cat ) {
@@ -59,8 +119,10 @@ add_filter('single_template', create_function(
   return $the_template;')
 ); 
 */
+
 /** For future: 
 * Customize login logo
+
 function my_login_logo() { ?>
   <style type="text/css">
   .login h1 a {
