@@ -195,7 +195,8 @@
 		</div>
 		<div class="insta-container">
 			<div>
-			<?php echo do_shortcode('[instagram-feed]'); ?>
+			<?php echo do_shortcode('[enjoyinstagram_mb]'); ?>
+			<!-- <?php echo do_shortcode('[instagram-feed]'); ?> -->
 			</div>
 		</div>
 	</section>

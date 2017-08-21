@@ -233,7 +233,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: #fff;
+    color:;
 }
 
 .social {
@@ -871,7 +871,7 @@ ul.team-info:hover {
 .insta-container{
     padding-bottom: 20px;
 }
-.sbi_photo.sbi_imgLiquid_bgSize.sbi_imgLiquid_ready{
+/*.sbi_photo.sbi_imgLiquid_bgSize.sbi_imgLiquid_ready{
     height: 110px !important;
     width: 140px !important;
 }
@@ -898,8 +898,23 @@ ul.team-info:hover {
 }
 #sbi_load{
     display: none;
+}*/
+.owl-item {
+    height: 130px !important;
+    width: 155px !important;
+    padding-right: 10px;
 }
-
+.owl-item img {
+    height: 130px !important;
+    width: 155px !important;
+    padding-right: 10px;
+}
+#owl-1{
+    padding-left: 5%;
+}
+.owl-pagination {
+    display: none;
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
