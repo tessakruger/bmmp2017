@@ -1414,6 +1414,9 @@ nav select#shop-navbar-list {display: none; }
 }
 
 @media (max-width:850px) {
+	.tag-line {
+		display: none;
+	}
     /*header*/
     .header{
       padding-left: 0px;
@@ -1552,6 +1555,14 @@ nav select#shop-navbar-list {display: none; }
 /*ALL MOBILE MEDIA QUERIES*/
 
 @media (max-width: 600px) {
+	.slider-btn {
+    margin-left: 33%;
+    top: 300px;
+	}
+	
+	.tag-line {
+		display: none;
+	}
     .team-right-panel {
         width: 86%;
         left: -5%;
@@ -1585,6 +1596,14 @@ nav select#shop-navbar-list {display: none; }
 }
 
 @media (max-width: 450px) {
+	.slider-btn {
+    margin-left: 26%;
+    top: 350px;
+	}
+	
+	.tag-line {
+		display: none;
+	}
     .tablet-orders {
         display: none !important;
     }
@@ -1686,6 +1705,9 @@ nav select#shop-navbar-list {display: none; }
 
 /*super tiny teeny x-small phones*/
 @media (max-width: 350px){
+	.tag-line {
+		display: none;
+	}
     .mobile-social li:first-child {
     padding-right: 57px;
     }
@@ -1887,7 +1909,9 @@ nav select#shop-navbar-list {display: none; }
 }
 
 @media (max-width: 480px) {
-
+	.tag-line {
+		display: 
+	}
 
     .footer-categories-container p, 
     .footer-social-container p, 
