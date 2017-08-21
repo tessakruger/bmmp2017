@@ -231,6 +231,11 @@ body {
     padding-right: 10px;
 }
 
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .social {
     list-style: none !important;
     display: inline-block;
@@ -1660,6 +1665,10 @@ nav select#shop-navbar-list {display: none; }
     .mobile-nav li {
         list-style: none;
         display: inline-block;
+    }
+    .mobile-nav a {
+        text-decoration: none;
+        color: #fff;
     }
     .mobile-nav button {
         border-radius: 5px;
