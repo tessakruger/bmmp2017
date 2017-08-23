@@ -102,12 +102,30 @@ function add_my_script() {
       array('jquery')
     );
 
+// load mixitup for product filtering
+    wp_enqueue_script(
+      'mixitup.min', 
+      get_template_directory_uri() . '/js/mixitup.min.js',
+      array('jquery')
+    );
+
 //woocommerce
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
 add_theme_support( 'woocommerce' ); }
 //woocommerce add to cart button display on shop page
 add_action( ‘woocommerce_after_shop_loop_item’, ‘woocommerce_template_loop_add_to_cart’, 10 );
+
+//set shop page to show all meal items (up to 25)
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+
+function new_loop_shop_per_page( $cols ) {
+  // $cols contains the current number of products per page based on the value stored on Options -> Reading
+  // Return the number of products you want to show per page.
+  $cols = 25;
+  return $cols;
+}
+
 /** FOR FUTURE USE
 * Use Post Category to load template
 
