@@ -910,7 +910,8 @@ ul.team-info:hover {
     padding-right: 10px;
 }
 #owl-1{
-    padding-left: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 .owl-pagination {
     display: none;
