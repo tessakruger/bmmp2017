@@ -233,7 +233,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color:;
+    color: #fff;
 }
 
 .social {
@@ -910,10 +910,25 @@ ul.team-info:hover {
     padding-right: 10px;
 }
 #owl-1{
-    padding-left: 5%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
 }
 .owl-pagination {
     display: none;
+}
+.owl-prev {
+    width: 45px;
+    float: left;
+    margin-left: -5vw;
+    margin-top: -7.5vw;
+    color: #e3e3e3;
+}
+.owl-next {
+    width: 45px;
+    float: right;
+    margin-right: -5vw;
+    margin-top: -7.5vw;
+    color: #e3e3e3;
 }
 /*--------------------------------------------------------------
 ## Footer
