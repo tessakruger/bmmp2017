@@ -55,7 +55,7 @@ get_header( 'shop' ); ?>
 		?>
 
     </header>
-
+<!-- 
     	<div class="navbar-meals">
     		<ul class="meal-type" style="color: orange">
     			<li data-filter="all">All</li>
@@ -69,12 +69,17 @@ get_header( 'shop' ); ?>
     		<div class="mix breakfast">Breakfast Burrito</div>
     		<div class="mix chicken">Lime Chipotle Chicken</div>
     		<div class="mix fish">Peach Glazed Salmon</div>
-    	</div>
+    	</div> -->
 
 
 		<nav class="shop-navbar">
 			<ul class="shop-navbar-list">
-    			<li data-filter=".product_cat-breakfast">Breakfast</li>
+				<li data-filter="all">All</li>
+    			<div class="item-group">
+    				<li data-filter=".product_cat-breakfast" class="selected">Breakfast
+<!--     					<div class="selected-arrow"></div> -->
+    				</li>
+    			</div>
     			<li data-filter=".product_cat-chicken">Chicken</li>
     			<li data-filter=".product_cat-fish">Fish</li>
     			<li data-filter=".product_cat-turkey">Turkey</li>
@@ -100,17 +105,11 @@ get_header( 'shop' ); ?>
 
 			<?php woocommerce_product_loop_start(); ?>
 				<div class="shop-menu-items">
-					<div class="shop-meals-wrapper container">
+					<div class="shop-meals-wrapper container" id="Container">
 					<?php woocommerce_product_subcategories(); ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 					<?php
-			        $categories = get_the_category();
-			        var_dump ($categories);
-			        // $slugs = wp_list_pluck($categories, 'slug');
-			        // $class_names = join($slugs);
-			        ?>
-						<?php
 							/**
 							 * woocommerce_shop_loop hook.
 							 *
@@ -167,18 +166,12 @@ get_header( 'shop' ); ?>
 		// do_action( 'woocommerce_sidebar' );
 	?>
 	-->
-
 	<script type="text/javascript">
-		var mixer = mixitup('.container');
-		// var mixer = mixitup(containerEl);
-		// var mixer = mixitup(containerEl, {
-	 //    selectors: {
-	 //        target: '.blog-item'
-	 //    },
-	 //    animation: {
-	 //        duration: 300
-		//     }
-		// });
+		var mixer = mixitup('.container', {
+	    	load: {
+	      		filter: '.product_cat-breakfast'
+	    		}
+	    	});
 	</script>
 
-<?php get_footer( 'shop' ); ?>
+<?php get_footer( ); ?>

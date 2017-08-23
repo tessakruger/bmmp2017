@@ -12,7 +12,7 @@ $(function() {
 	$("<option />", {
 	   "selected": "selected",
 	   "value"   : "",
-	   "text"    : "Select a meal type"
+	   "text"    : "Select a meal type",
 	}).appendTo("nav select");
 
   	// Populate dropdown with menu items from ul
@@ -20,19 +20,20 @@ $(function() {
    	var el = $(this);
    	// Take the value of id from the li and add it to the option value
    	$("<option />", {
-    	"value"   : el.attr("id"),
+    	"value"   : el.attr("data-filter"),
        	"text"    : el.text()
    		}).appendTo("nav select");
   	});
 
    // Making the dropdown work. When the dropdown changes...
-  	$("nav select").on('change', function() {
-    	$('[id^="meals-"]').hide();
-    	// ...only display the menu items of the associated selected meal type
-    	$('#meals-'+this.value.slice(5)).show();
-  	});
+  	// $("nav select").on('change', function() {
+   //  	$('[id^="meals-"]').hide();
+   //  	// ...only display the menu items of the associated selected meal type
+   //  	$('#meals-'+this.value.slice(5)).show();
+  	// });
 
 });
+
 
 // *** For browsers larger than 420px
 var arrow = $("<div class=\"selected-arrow\"></div>");
