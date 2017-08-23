@@ -916,6 +916,20 @@ ul.team-info:hover {
 .owl-pagination {
     display: none;
 }
+.owl-prev {
+    width: 45px;
+    float: left;
+    margin-left: -5vw;
+    margin-top: -7.5vw;
+    color: #e3e3e3;
+}
+.owl-next {
+    width: 45px;
+    float: right;
+    margin-right: -5vw;
+    margin-top: -7.5vw;
+    color: #e3e3e3;
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
