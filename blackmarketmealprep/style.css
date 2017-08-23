@@ -107,6 +107,7 @@ video {
     font: inherit;
     vertical-align: middle;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
@@ -1229,6 +1230,7 @@ ul.footer-affiliates {
     justify-content: center;
     position: relative;
     cursor: pointer;
+    font-family: Arimo, sans-serif;
 }
 
 .shop-navbar-list {
@@ -1265,7 +1267,8 @@ ul.footer-affiliates {
     display: flex;
     flex-wrap: wrap;
     padding: 30px 25px;
-
+    justify-content: center;
+    list-style: none;
 }
 
 .shop-meal {
@@ -1321,7 +1324,7 @@ ul.footer-affiliates {
     padding: 0 15px;
 }
 
-.meal-name {
+/*.meal-name {
     color: #000;
     font-size: 0.8em;
 }
@@ -1329,7 +1332,7 @@ ul.footer-affiliates {
 .meal-price {
     color: #f0b46e;
     font-size: 1em;
-}
+}*/
 
 .selected {color: #f0b46e;}
 
@@ -1360,25 +1363,26 @@ select#shop-navbar-list {
 }
 
 /* woocommerce shop-menu styling */
-.shop-meal-item {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    width: calc(100% * (1/4) - 10px);
+.product-type-simple {
+    margin: 15px;
     text-align: center;
-    list-style: none;
-    font-family: Arimo, sans-serif;
 }
 
 .product-thumbnail > img {
     border-radius: 18px;
 }
 
-.meal-price > h2,
-.meal-price > a {
+.meal-name {
+    color: #000;
+    font-size: 1.2em;
+    font-family: Arimo, sans-serif;
+    width: 220px;
+}
+
+.price > span {
     color: #f0b46e;
-    font-size: 1em;
-    text-decoration: none !important;
+    font-size: 1.5em;
+    font-family: Arimo, sans-serif;
 }
 
 nav select#shop-navbar-list {display: none; }
