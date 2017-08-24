@@ -1360,7 +1360,6 @@ select#shop-navbar-list {
 .product-thumbnail .add-cart-overlay {
     position: absolute;
     z-index: 99;
-    background: gainsboro;
     top: 0;
     left: 0;
     display: flex;
@@ -1377,7 +1376,8 @@ select#shop-navbar-list {
     opacity: 1;
 }
 
-.add_to_cart_button {
+.add_to_cart_button,
+.customize-btn {
     padding: 10px 20px;
     border-radius: 20px;
     background: #20202f;
