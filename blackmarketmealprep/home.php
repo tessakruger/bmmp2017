@@ -27,7 +27,7 @@
 
               		<div class="order-step">
             			<div class="order-line one"></div>
-    	        		<div class="order-icon"><a href="http://blackmarketmealprep.store/store/"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png"></a></div>
+    	        		<div class="order-icon"><a href="http://blackmarketmealprep.store/shop"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/ordernow-icon.png"></a></div>
     	        		<div class="order-mobile-wrapper">
 	                		<div class="order-step-title">
 	                			Order Now
@@ -39,7 +39,7 @@
                		</div>
     	            <div class="order-step">
     	            	<div class="order-line two"></div>
-    	              	<div class="order-icon"><a href="http://blackmarketmealprep.store/store/"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png"></a></div>
+    	              	<div class="order-icon"><a href="http://blackmarketmealprep.store/shop"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/customize-meal-icon.png"></a></div>
     	              	<div class="order-mobile-wrapper">
 	    	              	<div class="order-step-title">
 	    	                	Customize Meal
@@ -68,7 +68,7 @@
 	      	           </div>
     	  	        </div>
     	            <div class="order-step">
-    	            	<div class="order-icon"><a href="http://blackmarketmealprep.store/store/"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/checkout-enjoy-icon.png"></a></div>
+    	            	<div class="order-icon"><a href="http://blackmarketmealprep.store/shop"><img id="order-step-icon" src="<?php bloginfo('template_url'); ?>/assets/images/icons-howToOrder/checkout-enjoy-icon.png"></a></div>
     	            	<div class="order-mobile-wrapper">
 	    	            	<div class="order-step-title">
 	    	              		Checkout & Enjoy
@@ -204,5 +204,31 @@
 	</div>
 	<!--end instagram feed-->
 </div><!--  load whatever content -->
+
+	<!-- Home: Blog List -->
+	<section class="bloglist-container">
+		<div class="bloglist-header">
+			<h2>Feature Blogs</h2>
+			<p>checkout our latest features</p>
+		</div>
+		<div class="bloglist-content">
+		<?php
+		if ( have_posts() ) :
+			if ( is_home() && ! is_front_page() ) : ?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
+			<?php
+			endif;
+
+			/* Start the Loop */
+			while ( have_posts() ) : the_post();
+				get_template_part( 'template-parts/page-stories', get_post_format() );
+			endwhile;
+			the_posts_navigation();
+		else :
+			get_template_part( 'template-parts/page-stories', 'none' );
+		endif; ?>
+		</div>
 
 <?php get_footer(); ?>

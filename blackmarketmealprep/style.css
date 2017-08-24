@@ -922,14 +922,14 @@ ul.team-info:hover {
     float: left;
     margin-left: -5vw;
     margin-top: -7.5vw;
-    color: #e3e3e3;
+    color: #b6b2b2;;
 }
 .owl-next {
     width: 45px;
     float: right;
     margin-right: -5vw;
     margin-top: -7.5vw;
-    color: #e3e3e3;
+    color: #b6b2b2;
 }
 /*--------------------------------------------------------------
 ## Footer
@@ -1269,6 +1269,7 @@ ul.footer-affiliates {
     padding: 30px 25px;
     justify-content: center;
     list-style: none;
+    font-family: Arimo, sans-serif;
 }
 
 .shop-meal {
@@ -1279,34 +1280,13 @@ ul.footer-affiliates {
     text-align: center;
 }
 
-.img-container {
-    position: relative;
-}
-
-.shop-meal-image,
+/*.shop-meal-image,
 .overlay {
     width: 100%;
     border-radius: 18px;
-}
+}*/
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    opacity: 0;
-    transition: 250ms ease-in;
-    background-color: rgba(240, 180, 110, 0.8);
-}
-
-.img-container:hover .overlay {
-    opacity: 1;
-}
-
-.add-btn {
+/*.add-btn {
     padding: 10px 20px;
     border-radius: 20px;
     background: #20202f;
@@ -1314,7 +1294,7 @@ ul.footer-affiliates {
     font-size: 10px;
     text-transform: uppercase;
 }
-
+*/
 .shop-meal-details {
     display: flex;
     width: 100%;
@@ -1368,21 +1348,71 @@ select#shop-navbar-list {
     text-align: center;
 }
 
-.product-thumbnail > img {
+.product-thumbnail > img,
+.product-thumbnail .add-cart-overlay {
     border-radius: 18px;
+}
+
+.product-thumbnail {
+    position: relative;
+}
+
+.product-thumbnail .add-cart-overlay {
+    position: absolute;
+    z-index: 99;
+    background: gainsboro;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 250ms ease-in;
+    background-color: rgba(240, 180, 110, 0.5);
+}
+
+.product-thumbnail .add-cart-overlay:hover {
+    opacity: 1;
+}
+
+.add_to_cart_button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #20202f;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/*.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    opacity: 0;
+    transition: 250ms ease-in;
+    background-color: rgba(240, 180, 110, 0.8);
+}*/
+
+.meal-name,
+.price > span {
+    font-size: 0.8em;
+    width: 180px;
 }
 
 .meal-name {
     color: #000;
-    font-size: 1.2em;
-    font-family: Arimo, sans-serif;
-    width: 220px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .price > span {
     color: #f0b46e;
-    font-size: 1.5em;
-    font-family: Arimo, sans-serif;
 }
 
 nav select#shop-navbar-list {display: none; }
@@ -1587,6 +1617,28 @@ nav select#shop-navbar-list {display: none; }
     .slider-btn{
     margin-left: 38%;
     top: 370px;
+    }
+
+    .owl-item img {
+        padding: 0px;
+    }
+    #owl-1 {
+        padding: 5px;
+    }
+    .owl-prev {
+    width: 45px;
+    clear: left;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: #b6b2b2;    
+    }
+
+    .owl-next {
+    width: 45px;
+    clear: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    color: #b6b2b2;
     }
 }
 
@@ -1993,5 +2045,5 @@ nav select#shop-navbar-list {display: none; }
 
     .copyright-info {
         font-size: 11px;
-    }
+    } 
 }

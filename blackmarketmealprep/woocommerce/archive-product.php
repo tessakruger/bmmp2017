@@ -74,12 +74,10 @@ get_header( 'shop' ); ?>
 
 		<nav class="shop-navbar">
 			<ul class="shop-navbar-list">
-				<li data-filter="all">All</li>
-    			<div class="item-group">
-    				<li data-filter=".product_cat-breakfast" class="selected">Breakfast
-<!--     					<div class="selected-arrow"></div> -->
-    				</li>
+				<div class="item-group">
+					<li data-filter=".product_cat-breakfast, .product_cat-chicken, .product_cat-fish, .product_cat-turkey, .product_cat-beef, .product_cat-vegan, .product_cat-salads" class="selected">All</li>
     			</div>
+    			<li data-filter=".product_cat-breakfast">Breakfast</li>
     			<li data-filter=".product_cat-chicken">Chicken</li>
     			<li data-filter=".product_cat-fish">Fish</li>
     			<li data-filter=".product_cat-turkey">Turkey</li>
@@ -105,7 +103,7 @@ get_header( 'shop' ); ?>
 
 			<?php woocommerce_product_loop_start(); ?>
 				<div class="shop-menu-items">
-					<div class="shop-meals-wrapper container" id="Container">
+					<div class="shop-meals-wrapper container">
 					<?php woocommerce_product_subcategories(); ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -169,7 +167,7 @@ get_header( 'shop' ); ?>
 	<script type="text/javascript">
 		var mixer = mixitup('.container', {
 	    	load: {
-	      		filter: '.product_cat-breakfast'
+	      		filter: '.product_cat-breakfast, .product_cat-chicken, .product_cat-fish, .product_cat-turkey, .product_cat-beef, .product_cat-vegan, .product_cat-salads'
 	    		}
 	    	});
 	</script>
