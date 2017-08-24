@@ -1342,7 +1342,11 @@ select#shop-navbar-list {
     transform: rotate(45deg);
 }
 
-/* woocommerce shop-menu styling */
+/* ============================================================*/
+/* === WOOCOMMERCE 
+/* ============================================================*/
+
+/* Shop Menu */
 .product-type-simple {
     margin: 15px;
     text-align: center;
@@ -1426,6 +1430,58 @@ nav select#shop-navbar-list {display: none; }
     background-color: #171722;
     border-top: 1px white solid;
 }
+
+/* Shop Checkout */
+.checkout.woocommerce-checkout { background: #f4f2ed; }
+
+.customer-order-wrapper {
+    font-family: Arimo, sans-serif;
+    display: flex;
+    justify-content: center;
+    border: 2px solid goldenrod;
+    width: 100%;
+    max-width: 1024px;
+    margin: 50px auto;
+}
+
+#customer_details.col2-set,
+.order-review-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid cadetblue;
+    max-width: 500px;
+    border-radius: 18px;
+    padding: 25px;
+    background: #fff;
+    align-self: flex-start;
+}
+
+#customer_details.col2-set .col-1,
+#customer_details.col2-set .col-2 { width: 100%; }
+
+.order-review-wrapper {
+    border: 2px solid lightcoral;
+    margin-left: 25px;
+}
+
+.woocommerce form .form-row input.input-text {
+    border: 1.5px solid gainsboro;
+    border-radius: 18px;
+    padding: 6px 12px;
+}
+
+.woocommerce form .form-row.woocommerce-validated input.input-text {
+    border-color: #69bf29;
+}
+
+.woocommerce form .form-row.woocommerce-invalid input.input-text {
+    border-color: #b81c23;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill { background-color: none; }
 
 /* ============================================================*/
 /* =============== MEDIA QUERIES*/
@@ -1885,6 +1941,10 @@ nav select#shop-navbar-list {display: none; }
     nav select#shop-navbar-list { display: block; }
 
     .shop-navbar { background: #fff; }
+
+    .customer-order-wrapper { flex-direction: column; }
+
+    .order-review-wrapper { margin: auto; }
 }
 
 @media (max-width: 420px) {
