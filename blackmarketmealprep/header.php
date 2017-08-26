@@ -42,7 +42,7 @@
 	  	<li><a href="<?php echo site_url(); ?>/checkout/">&nbsp;Checkout&nbsp;</a></li>
 	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/cart_nav_icon.png" alt="cart" /></li>
 	  	<li><a href="<?php echo site_url(); ?>/cart/">&nbsp;5 items - $20.85&nbsp;</a></li>
-	  	<li><a href="<?php echo site_url(); ?>/my-account/"><button>login</button></a></li>
+	  	<li><button><a href="<?php echo site_url(); ?>/my-account/">login</a></button></li>
 	  </ul>
 	   <div class="tablet-orders">
 	   	<ul class="order-text">
@@ -84,14 +84,14 @@
 	<div class="nav">
 	  <ul>
 	  	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/logo.png" height="45px" alt="logo"/>&nbsp;&nbsp;</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;Home</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;How to Order</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;Mission</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;Menu</li>
-	  	<li><div class="dot">&#8226;</div>&nbsp;What People Say</li>
+	  	<li><div class="dot">&#8226;</div><a href="<?php echo site_url(); ?>">&nbsp;Home</a></li>
+	  	<li><div class="dot">&#8226;</div><a href="<?php echo site_url(); ?>/#how-to-order"> &nbsp;How to Order</a></li>
+	  	<li><div class="dot">&#8226;</div>&nbsp;<a href="<?php echo site_url(); ?>/#mission">Mission</a></li>
+	  	<li><div class="dot">&#8226;</div><a href="<?php echo site_url(); ?>/store/">&nbsp;Menu</a></li>
+	  	<li><div class="dot">&#8226;</div>&nbsp;<a href="<?php echo site_url(); ?>/#testimonials-container">What People Say</a></li>
 	  <ul>
 	  <ul class="social">
-	    <li><a target="_blank" href="https://www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png"  alt="facebook"/></a></li>
+	    <li><a target="_blank" href="www.facebook.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/facebook_icon.png"  alt="facebook"/></a></li>
 	    <li><a target="_blank" href="https://www.instagram.com/blackmarketmealprep/"><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/instagram_icon.png" alt="instagram"/></a></li>
 	  </ul>
 	</div>
@@ -103,11 +103,11 @@
 	    	<li><img src="<?php echo site_url(); ?>/wp-content/themes/blackmarketmealprep/assets/images/hamburger_menu.png" alt="menu" class="hamburger-btn"/></li>
 	    	<div class="mobile-menu">
 	    		<ul>
-	    			<li>Home</li>
-	    			<li>How To Order</li>
-	    			<li>Mission</li>
-	    			<li>Menu</li>
-	    			<li>What People Say</li>
+	    			<li><a href="<?php echo site_url(); ?>">Home</a></li>
+	    			<li><a href="<?php echo site_url(); ?>/#how-to-order">How To Order</a></li>
+	    			<li><a href="<?php echo site_url(); ?>/#mission">Mission</a></li>
+	    			<li><a href="<?php echo site_url(); ?>/store/">Menu</a></li>
+	    			<li><a href="<?php echo site_url(); ?>/#testimonials-container">What People Say</a></li>
 	    		</ul>
 	    	</div>
 	  	</ul>
